@@ -1,0 +1,237 @@
+const fs = require('fs');
+const p = 'C:/Users/mastr/claude co/legal-docs/llc-operating-agreement-template.html';
+
+const html = `<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free LLC Operating Agreement Template 2026 | Fill In &amp; Download PDF</title>
+<meta name="description" content="Free LLC operating agreement template for 2026. Single-member and multi-member. Fill in online, preview live, download PDF. Required in most states. No sign-up.">
+<link rel="canonical" href="https://www.freedoctemplates.xyz/llc-operating-agreement-template">
+<meta property="og:title" content="Free LLC Operating Agreement Template 2026 — Fill In &amp; Download PDF">
+<meta property="og:type" content="website">
+<meta name="robots" content="index,follow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap">
+<link rel="stylesheet" href="/shared/styles.css?v=1">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Free LLC Operating Agreement Template 2026","url":"https://www.freedoctemplates.xyz/llc-operating-agreement-template","description":"Create an LLC operating agreement online. Supports single-member and multi-member LLCs. Fill in, preview live, download as PDF. Updated for 2026.","applicationCategory":"LegalApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Do I need an operating agreement for my LLC?","acceptedAnswer":{"@type":"Answer","text":"Most states do not legally require an operating agreement, but California, Delaware, Maine, Missouri, and New York require one. Regardless of state law, having an operating agreement is strongly recommended because it: protects your limited liability status, prevents state default rules from governing your LLC, and documents ownership percentages and decision-making authority."}},{"@type":"Question","name":"Does an LLC operating agreement need to be notarized?","acceptedAnswer":{"@type":"Answer","text":"No. An LLC operating agreement does not need to be notarized in any US state. It does need to be signed by all members. Some members choose to have signatures notarized for extra legal protection, but it is not legally required."}},{"@type":"Question","name":"Can a single person have an LLC?","acceptedAnswer":{"@type":"Answer","text":"Yes. A single-member LLC (SMLLC) is owned by one person. It provides personal liability protection and can be taxed as a sole proprietorship (disregarded entity) or elect to be taxed as an S-Corp. The operating agreement for a SMLLC documents the owner, capital contribution, and management structure."}},{"@type":"Question","name":"What should an LLC operating agreement include?","acceptedAnswer":{"@type":"Answer","text":"A complete LLC operating agreement should include: the LLC name and state, the registered agent, member names and ownership percentages, capital contributions, management structure (member-managed vs manager-managed), profit and loss allocation, voting rights, member admission and withdrawal procedures, and dissolution provisions."}}]}
+</script>
+</head>
+<body>
+<div class="cmd-overlay" id="cmd-overlay" role="dialog" aria-modal="true" aria-label="Search templates">
+  <div class="cmd-modal">
+    <div class="cmd-search-row">
+      <span class="cmd-search-icon"><svg width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="9" r="6"/><path d="M15 15l3 3"/></svg></span>
+      <input class="cmd-input" id="cmd-input" type="text" placeholder="Search 15+ templates..." autocomplete="off" spellcheck="false">
+      <kbd class="cmd-kbd-esc" onclick="closeCmd()">esc</kbd>
+    </div>
+    <div class="cmd-body" id="cmd-body"></div>
+    <div class="cmd-footer"><span class="cmd-hint"><kbd class="cmd-key">&uarr;&darr;</kbd> navigate</span><span class="cmd-hint"><kbd class="cmd-key">&#x21b5;</kbd> open</span><span class="cmd-hint"><kbd class="cmd-key">esc</kbd> close</span></div>
+  </div>
+</div>
+<header class="site-header">
+  <div class="header-inner">
+    <a href="/" class="site-logo">FreeDoc<span>Templates</span></a>
+    <nav class="main-nav" aria-label="Main">
+      <div class="nav-group">
+        <button class="nav-trigger" aria-haspopup="true" aria-expanded="false">Business <svg class="nav-chevron" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4l4 4 4-4"/></svg></button>
+        <div class="nav-dropdown"><a href="/invoice-template" class="nav-item">Invoice Template</a><a href="/independent-contractor-agreement-template" class="nav-item">Contractor Agreement</a><a href="/nda-template" class="nav-item">NDA Template</a></div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-trigger" aria-haspopup="true" aria-expanded="false">Personal <svg class="nav-chevron" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4l4 4 4-4"/></svg></button>
+        <div class="nav-dropdown"><a href="/power-of-attorney-template" class="nav-item">Power of Attorney</a><a href="/llc-operating-agreement-template" class="nav-item nav-item--active">LLC Agreement</a><a href="/bill-of-sale-template" class="nav-item">Bill of Sale</a></div>
+      </div>
+    </nav>
+    <div class="header-actions">
+      <button class="btn-search" id="btn-search" aria-label="Search"><svg width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="9" r="6"/><path d="M15 15l3 3"/></svg></button>
+      <a href="/tools" class="btn-all-tools">All Templates</a>
+    </div>
+  </div>
+</header>
+<main class="page-wrap">
+  <div class="container">
+    <nav class="breadcrumb"><a href="/">Home</a><span>&#x203A;</span><span aria-current="page">LLC Operating Agreement</span></nav>
+    <h1 class="page-title" data-enter>Free LLC Operating Agreement <span style="color:var(--ink-3);font-weight:400;font-size:.65em">2026</span></h1>
+    <p class="page-sub" data-enter data-delay="1">Single-member or multi-member LLC. Fill in your details, preview live, and download as PDF. Required in CA, DE, ME, MO, NY — recommended everywhere else.</p>
+    <div class="page-badges" data-enter data-delay="2">
+      <span class="page-badge"><svg width="11" height="11" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Free, no account</span>
+      <span class="page-badge"><svg width="11" height="11" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Single &amp; multi-member</span>
+      <span class="page-badge"><svg width="11" height="11" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> All 50 states</span>
+    </div>
+    <div class="doc-layout">
+      <div class="doc-form-panel" data-enter data-delay="1">
+        <div class="doc-card">
+          <div class="doc-card-header">LLC Information</div>
+          <div class="doc-card-body">
+            <div class="form-group"><label class="form-label">LLC Name (exact legal name)</label><input type="text" id="llc-name" class="form-input" placeholder="Acme Holdings LLC"></div>
+            <div class="form-group"><label class="form-label">State of Formation</label>
+              <select id="llc-state" class="form-select">
+                <option value="">Select state...</option>
+                <option>Alabama</option><option>Alaska</option><option>Arizona</option><option>Arkansas</option>
+                <option>California</option><option>Colorado</option><option>Connecticut</option><option>Delaware</option>
+                <option>Florida</option><option>Georgia</option><option>Hawaii</option><option>Idaho</option>
+                <option>Illinois</option><option>Indiana</option><option>Iowa</option><option>Kansas</option>
+                <option>Kentucky</option><option>Louisiana</option><option>Maine</option><option>Maryland</option>
+                <option>Massachusetts</option><option>Michigan</option><option>Minnesota</option><option>Mississippi</option>
+                <option>Missouri</option><option>Montana</option><option>Nebraska</option><option>Nevada</option>
+                <option>New Hampshire</option><option>New Jersey</option><option>New Mexico</option><option>New York</option>
+                <option>North Carolina</option><option>North Dakota</option><option>Ohio</option><option>Oklahoma</option>
+                <option>Oregon</option><option>Pennsylvania</option><option>Rhode Island</option><option>South Carolina</option>
+                <option>South Dakota</option><option>Tennessee</option><option>Texas</option><option>Utah</option>
+                <option>Vermont</option><option>Virginia</option><option>Washington</option><option>West Virginia</option>
+                <option>Wisconsin</option><option>Wyoming</option>
+              </select>
+            </div>
+            <div class="form-group"><label class="form-label">Principal Office Address</label><input type="text" id="llc-addr" class="form-input" placeholder="123 Business Blvd, Austin, TX 78701"></div>
+            <div class="form-group"><label class="form-label">Business Purpose</label><textarea id="llc-purpose" class="form-textarea" placeholder="Any lawful business activity permitted under the laws of the state of formation."></textarea></div>
+            <div class="form-group"><label class="form-label">Formation Date</label><input type="date" id="llc-formed" class="form-input"></div>
+            <div class="form-group"><label class="form-label">Management Type</label>
+              <select id="llc-mgmt" class="form-select">
+                <option value="member">Member-Managed (members run the business)</option>
+                <option value="manager">Manager-Managed (designated manager runs operations)</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="doc-card" style="margin-top:12px">
+          <div class="doc-card-header">Members &amp; Ownership</div>
+          <div class="doc-card-body">
+            <div id="llc-members-list"></div>
+            <button class="doc-btn doc-btn--outline" id="add-member-btn" style="margin-top:8px">+ Add Member</button>
+          </div>
+        </div>
+        <div class="btn-group" style="margin-top:12px">
+          <button class="doc-btn doc-btn--gold" onclick="window.print()">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 01-2-2v-5a2 2 0 012-2h16a2 2 0 012 2v5a2 2 0 01-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+            Download / Print PDF
+          </button>
+          <p style="font-size:11px;color:var(--ink-3);text-align:center;margin-top:4px">Use &ldquo;Save as PDF&rdquo; in the print dialog. All members must sign.</p>
+        </div>
+      </div>
+      <div class="doc-preview-panel" data-enter data-delay="2">
+        <div class="preview-toolbar">
+          <span class="preview-label">Live Preview</span>
+          <div class="preview-actions">
+            <button class="preview-btn preview-btn--primary" onclick="window.print()">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 01-2-2v-5a2 2 0 012-2h16a2 2 0 012 2v5a2 2 0 01-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+              Download PDF
+            </button>
+          </div>
+        </div>
+        <div class="legal-document" id="llc-preview"></div>
+      </div>
+    </div>
+    <section class="faq-section" style="margin:48px -24px 0;padding:48px 24px">
+      <div class="faq-header"><p class="section-eyebrow">FAQ</p><h2 class="section-title" style="font-size:24px">LLC questions answered</h2></div>
+      <div class="faq-list">
+        <details class="faq-item"><summary class="faq-q">What states require an LLC operating agreement?</summary><div class="faq-a">Five states legally require LLCs to have an operating agreement: California, Delaware, Maine, Missouri, and New York. Even in states that do not require one, an operating agreement is strongly recommended because without one, your state&apos;s default LLC rules govern your business, which may not match your intentions.</div></details>
+        <details class="faq-item"><summary class="faq-q">What is the difference between member-managed and manager-managed?</summary><div class="faq-a">In a member-managed LLC, all members (owners) participate in day-to-day decisions. This is the most common structure for small LLCs. In a manager-managed LLC, a designated manager (who may or may not be a member) handles operations, while passive members invest but do not manage. Manager-managed LLCs are common when some members are investors.</div></details>
+        <details class="faq-item"><summary class="faq-q">Do I file the operating agreement with the state?</summary><div class="faq-a">No. The operating agreement is an internal document &mdash; you keep it in your business records. You do not file it with the state (unlike the Articles of Organization, which is the formation document you file with your state&apos;s business registry). Your bank may ask to see it when opening a business account.</div></details>
+        <details class="faq-item"><summary class="faq-q">Can I amend an operating agreement after signing?</summary><div class="faq-a">Yes. Operating agreements can be amended by member vote according to the amendment procedures in the document. Typically, all members must agree to an amendment in writing. Keep all signed versions of your operating agreement for your records.</div></details>
+      </div>
+    </section>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div><a href="/" class="footer-logo">FreeDocTemplates</a><p class="footer-tagline">Free legal document templates. No sign-up, no watermarks.</p><p class="footer-disclaimer" style="margin-top:8px">Not a law firm. For informational use only.</p></div>
+      <div><div class="footer-col-title">Business</div><nav class="footer-nav"><a href="/invoice-template">Invoice Template</a><a href="/independent-contractor-agreement-template">Contractor Agreement</a><a href="/nda-template">NDA</a></nav></div>
+      <div><div class="footer-col-title">Property</div><nav class="footer-nav"><a href="/bill-of-sale-template">Bill of Sale</a><a href="/lease-agreement-template">Lease Agreement</a></nav></div>
+      <div><div class="footer-col-title">Personal</div><nav class="footer-nav"><a href="/power-of-attorney-template">Power of Attorney</a><a href="/promissory-note-template">Promissory Note</a></nav></div>
+    </div>
+    <div class="footer-bottom"><p>&copy; 2026 FreeDocTemplates.xyz</p></div>
+  </div>
+</footer>
+<script>
+(function(){
+  var members = [{ name:'', addr:'', pct:'100', contrib:'0' }];
+
+  function gv(id){ var el=document.getElementById(id); return el?(el.value||'').trim():''; }
+  function field(v,ph){ return v?'<span class="doc-field">'+v+'</span>':'<span class="doc-field empty">'+ph+'</span>'; }
+
+  function renderMemberInputs() {
+    var html = members.map(function(m,i){
+      return '<div style="background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:12px;margin-bottom:10px">'
+        + '<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">'
+        + '<span style="font-size:12px;font-weight:700;color:var(--ink-2)">Member '+(i+1)+'</span>'
+        + (members.length>1?'<button data-del="'+i+'" style="background:none;border:none;cursor:pointer;color:var(--ink-3);font-size:13px">&#xD7; Remove</button>':'')
+        + '</div>'
+        + '<div class="form-group"><label class="form-label">Full Name</label><input type="text" data-i="'+i+'" data-f="name" class="form-input" value="'+m.name+'" placeholder="Jane Smith"></div>'
+        + '<div class="form-row">'
+        + '<div class="form-group"><label class="form-label">Ownership %</label><input type="number" data-i="'+i+'" data-f="pct" class="form-input" value="'+m.pct+'" min="0" max="100" step="1"></div>'
+        + '<div class="form-group"><label class="form-label">Capital Contribution</label><input type="text" data-i="'+i+'" data-f="contrib" class="form-input" value="'+m.contrib+'" placeholder="5000"></div>'
+        + '</div></div>';
+    }).join('');
+    document.getElementById('llc-members-list').innerHTML = html;
+    document.querySelectorAll('[data-i][data-f]').forEach(function(el){
+      el.addEventListener('input', function(){ members[this.dataset.i][this.dataset.f]=this.value; renderPreview(); });
+    });
+    document.querySelectorAll('[data-del]').forEach(function(btn){
+      btn.addEventListener('click', function(){ members.splice(parseInt(this.dataset.del),1); renderMemberInputs(); renderPreview(); });
+    });
+  }
+
+  function renderPreview() {
+    var name    = gv('llc-name')    || '[LLC Name]';
+    var state   = gv('llc-state')   || '[State]';
+    var addr    = gv('llc-addr')    || '[Principal Office Address]';
+    var purpose = gv('llc-purpose') || 'Any lawful business activity permitted under the laws of the state of formation.';
+    var formed  = gv('llc-formed') ? new Date(gv('llc-formed')+'T12:00:00').toLocaleDateString('en-US',{year:'numeric',month:'long',day:'numeric'}) : '[Formation Date]';
+    var mgmt    = gv('llc-mgmt') === 'manager' ? 'manager-managed' : 'member-managed';
+
+    var memberRows = members.map(function(m,i){
+      return '<tr><td>'+(m.name||'[Member '+(i+1)+']')+'</td><td style="text-align:right">'+(m.pct||'0')+'%</td><td style="text-align:right">$'+(m.contrib||'0')+'</td></tr>';
+    }).join('');
+
+    var sigBlocks = members.map(function(m){
+      return '<div class="doc-sig-block"><div style="height:40px"></div><div><strong>Member: '+(m.name||'[Name]')+'</strong></div><div class="doc-sig-label">Ownership: '+(m.pct||'0')+'%</div><div class="doc-sig-label">Date: ________</div></div>';
+    }).join('');
+
+    document.getElementById('llc-preview').innerHTML =
+      '<div class="doc-title">OPERATING AGREEMENT</div>'
+      + '<div class="doc-subtitle">of '+name+'<br>A '+state+' Limited Liability Company</div>'
+      + '<div class="doc-clause"><p>This Operating Agreement (the &ldquo;Agreement&rdquo;) of <strong>'+name+'</strong>, a limited liability company organized under the laws of the State of '+state+' (the &ldquo;Company&rdquo;), is entered into and effective as of '+formed+'.</p></div>'
+      + '<div class="doc-section"><div class="doc-section-title">Article I &mdash; Formation</div>'
+      + '<p>1.1 <strong>Name.</strong> The name of the Company is '+name+'.</p>'
+      + '<p>1.2 <strong>Principal Office.</strong> '+addr+'</p>'
+      + '<p>1.3 <strong>Purpose.</strong> '+purpose+'</p>'
+      + '<p>1.4 <strong>Management.</strong> The Company shall be '+mgmt+'.</p></div>'
+      + '<div class="doc-section"><div class="doc-section-title">Article II &mdash; Members &amp; Ownership</div>'
+      + '<table class="doc-table"><thead><tr><th>Member Name</th><th style="text-align:right">Ownership %</th><th style="text-align:right">Capital Contribution</th></tr></thead><tbody>'+memberRows+'</tbody></table></div>'
+      + '<div class="doc-section"><div class="doc-section-title">Article III &mdash; Profits &amp; Distributions</div>'
+      + '<p>Profits and losses shall be allocated, and distributions made, in proportion to each member&apos;s ownership percentage, unless otherwise unanimously agreed by the members in writing.</p></div>'
+      + '<div class="doc-section"><div class="doc-section-title">Article IV &mdash; Voting</div>'
+      + '<p>Decisions requiring member approval shall be decided by a majority vote based on ownership percentage, unless otherwise specified in this Agreement or required by applicable state law.</p></div>'
+      + '<div class="doc-section"><div class="doc-section-title">Article V &mdash; Dissolution</div>'
+      + '<p>The Company may be dissolved upon unanimous written consent of all members, by operation of law, or as otherwise provided by the laws of the State of '+state+'.</p></div>'
+      + '<p style="font-size:11px;color:#555;margin-bottom:24px">IN WITNESS WHEREOF, the undersigned have executed this Operating Agreement as of the date first written above.</p>'
+      + '<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:24px;margin-top:32px">'+sigBlocks+'</div>';
+  }
+
+  document.getElementById('add-member-btn').addEventListener('click', function(){
+    members.push({ name:'', addr:'', pct:'0', contrib:'0' }); renderMemberInputs(); renderPreview();
+  });
+  document.querySelectorAll('[id^="llc-"]').forEach(function(el){
+    el.addEventListener('input', renderPreview);
+    el.addEventListener('change', renderPreview);
+  });
+
+  var today = new Date().toISOString().split('T')[0];
+  document.getElementById('llc-formed').value = today;
+  renderMemberInputs();
+  renderPreview();
+})();
+</script>
+<script src="/shared/scripts.js?v=1" defer></script>
+</body>
+</html>`;
+
+fs.writeFileSync(p, html);
+console.log('llc ok', fs.statSync(p).size);

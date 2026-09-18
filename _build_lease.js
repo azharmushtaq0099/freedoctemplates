@@ -287,6 +287,16 @@ const html = `<!DOCTYPE html>
         <a href="/power-of-attorney-template" class="tool-card"><div class="tc-icon tc-gold"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div><div><div class="tool-card-title">Power of Attorney</div><div class="tool-card-desc">Let someone manage your property in your absence.</div></div></a>
       </div>
     </section>
+
+    <!-- STATE PAGES -->
+    <section style="margin-top:56px">
+      <p class="section-eyebrow">State-Specific Templates</p>
+      <h2 class="section-title" style="font-size:22px;margin-bottom:4px">Lease Agreement by State</h2>
+      <p style="font-size:13px;color:var(--ink-3);margin-bottom:20px">Each page includes your state\'s deposit limits, notice requirements, and rent control rules.</p>
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:8px">
+        ${['Alabama','Alaska','Arizona','Arkansas','California','Colorado','Connecticut','Delaware','Florida','Georgia','Hawaii','Idaho','Illinois','Indiana','Iowa','Kansas','Kentucky','Louisiana','Maine','Maryland','Massachusetts','Michigan','Minnesota','Mississippi','Missouri','Montana','Nebraska','Nevada','New Hampshire','New Jersey','New Mexico','New York','North Carolina','North Dakota','Ohio','Oklahoma','Oregon','Pennsylvania','Rhode Island','South Carolina','South Dakota','Tennessee','Texas','Utah','Vermont','Virginia','Washington','West Virginia','Wisconsin','Wyoming'].map(s=>'<a href="/'+s.toLowerCase().replace(/\\s+/g,'-')+'-lease-agreement-template" style="display:block;padding:8px 12px;border:1px solid var(--border);border-radius:8px;font-size:13px;font-weight:500;color:var(--ink-1);text-decoration:none;transition:border-color .15s,background .15s" onmouseover="this.style.borderColor=\'var(--accent)\';this.style.background=\'var(--surface-2)\'" onmouseout="this.style.borderColor=\'var(--border)\';this.style.background=\'\'">'+s+'</a>').join('')}
+      </div>
+    </section>
   </div>
 </main>
 

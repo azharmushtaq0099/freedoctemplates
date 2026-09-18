@@ -239,6 +239,16 @@ const html = `<!DOCTYPE html>
         <a href="/invoice-template" class="tool-card"><div class="tc-icon tc-green"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="2" x2="12" y2="22"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg></div><div><div class="tool-card-title">Invoice Template</div><div class="tool-card-desc">Professional invoice for business sales.</div></div></a>
       </div>
     </section>
+
+    <!-- STATE PAGES -->
+    <section style="margin-top:56px">
+      <p class="section-eyebrow">State-Specific Templates</p>
+      <h2 class="section-title" style="font-size:22px;margin-bottom:4px">Bill of Sale by State</h2>
+      <p style="font-size:13px;color:var(--ink-3);margin-bottom:20px">Each page lists your state\'s notary requirement, odometer disclosure rules, and DMV title transfer fee.</p>
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:8px">
+        ${['Alabama','Alaska','Arizona','Arkansas','California','Colorado','Connecticut','Delaware','Florida','Georgia','Hawaii','Idaho','Illinois','Indiana','Iowa','Kansas','Kentucky','Louisiana','Maine','Maryland','Massachusetts','Michigan','Minnesota','Mississippi','Missouri','Montana','Nebraska','Nevada','New Hampshire','New Jersey','New Mexico','New York','North Carolina','North Dakota','Ohio','Oklahoma','Oregon','Pennsylvania','Rhode Island','South Carolina','South Dakota','Tennessee','Texas','Utah','Vermont','Virginia','Washington','West Virginia','Wisconsin','Wyoming'].map(s=>'<a href="/'+s.toLowerCase().replace(/\\s+/g,'-')+'-bill-of-sale-template" style="display:block;padding:8px 12px;border:1px solid var(--border);border-radius:8px;font-size:13px;font-weight:500;color:var(--ink-1);text-decoration:none;transition:border-color .15s,background .15s" onmouseover="this.style.borderColor=\'var(--accent)\';this.style.background=\'var(--surface-2)\'" onmouseout="this.style.borderColor=\'var(--border)\';this.style.background=\'\'">'+s+'</a>').join('')}
+      </div>
+    </section>
   </div>
 </main>
 

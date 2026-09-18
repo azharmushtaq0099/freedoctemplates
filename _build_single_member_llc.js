@@ -1,0 +1,235 @@
+const fs = require('fs');
+const p = 'C:/Users/mastr/claude co/legal-docs/single-member-llc-operating-agreement-template.html';
+
+const html = `<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free Single-Member LLC Operating Agreement Template 2026 | Fill &amp; Download PDF</title>
+<meta name="description" content="Free single-member LLC operating agreement template 2026. The simplest LLC structure — one owner, complete liability protection. Fill in, preview, download PDF. All 50 states. No sign-up.">
+<link rel="canonical" href="https://www.freedoctemplates.xyz/single-member-llc-operating-agreement-template">
+<meta property="og:title" content="Free Single-Member LLC Operating Agreement 2026 — Fill &amp; Download PDF">
+<meta property="og:type" content="website">
+<meta name="robots" content="index,follow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap">
+<link rel="stylesheet" href="/shared/styles.css?v=1">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Free Single-Member LLC Operating Agreement Template 2026","url":"https://www.freedoctemplates.xyz/single-member-llc-operating-agreement-template","description":"Create a single-member LLC operating agreement online. All 50 states. Fill in, preview live, download as PDF. Updated for 2026. No sign-up required.","applicationCategory":"LegalApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Does a single-member LLC need an operating agreement?","acceptedAnswer":{"@type":"Answer","text":"Five states require all LLCs to have an operating agreement: California, Delaware, Maine, Missouri, and New York. But even where not legally required, a single-member LLC should have an operating agreement because: (1) it reinforces the legal separation between you and the LLC (essential for liability protection), (2) banks typically require it to open a business account, and (3) without it, state default rules govern your LLC, which may not reflect your intentions."}},{"@type":"Question","name":"How is a single-member LLC taxed?","acceptedAnswer":{"@type":"Answer","text":"By default, the IRS treats a single-member LLC as a disregarded entity — meaning the LLC's income and expenses are reported on your personal tax return (Schedule C). You can elect S-Corp taxation by filing Form 2553, which can reduce self-employment taxes when the business earns over approximately $50,000/year. Consult a CPA to determine which tax treatment is better for your situation."}},{"@type":"Question","name":"Can a single-member LLC have employees?","acceptedAnswer":{"@type":"Answer","text":"Yes. A single-member LLC can hire employees. You will need an Employer Identification Number (EIN), which you can get free from the IRS at irs.gov. With employees, you are responsible for payroll taxes, workers compensation insurance, and other employer obligations."}},{"@type":"Question","name":"What is the difference between a single-member and multi-member LLC?","acceptedAnswer":{"@type":"Answer","text":"A single-member LLC has one owner (member). A multi-member LLC has two or more owners. Both provide limited liability protection. The key differences are in taxation (SMLLC is a disregarded entity; MMLLC is taxed as a partnership by default) and management (MMLLC needs clear documentation of each member's ownership percentage and voting rights)."}}]}
+</script>
+</head>
+<body>
+<div class="cmd-overlay" id="cmd-overlay" role="dialog" aria-modal="true" aria-label="Search templates">
+  <div class="cmd-modal">
+    <div class="cmd-search-row">
+      <span class="cmd-search-icon"><svg width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="9" r="6"/><path d="M15 15l3 3"/></svg></span>
+      <input class="cmd-input" id="cmd-input" type="text" placeholder="Search 15+ templates..." autocomplete="off" spellcheck="false">
+      <kbd class="cmd-kbd-esc" onclick="closeCmd()">esc</kbd>
+    </div>
+    <div class="cmd-body" id="cmd-body"></div>
+    <div class="cmd-footer"><span class="cmd-hint"><kbd class="cmd-key">&uarr;&darr;</kbd> navigate</span><span class="cmd-hint"><kbd class="cmd-key">&#x21b5;</kbd> open</span><span class="cmd-hint"><kbd class="cmd-key">esc</kbd> close</span></div>
+  </div>
+</div>
+<header class="site-header">
+  <div class="header-inner">
+    <a href="/" class="site-logo">FreeDoc<span>Templates</span></a>
+    <nav class="main-nav" aria-label="Main">
+      <div class="nav-group">
+        <button class="nav-trigger" aria-haspopup="true" aria-expanded="false">Business <svg class="nav-chevron" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4l4 4 4-4"/></svg></button>
+        <div class="nav-dropdown"><a href="/invoice-template" class="nav-item">Invoice Template</a><a href="/nda-template" class="nav-item">NDA Template</a><a href="/employment-contract-template" class="nav-item">Employment Contract</a></div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-trigger" aria-haspopup="true" aria-expanded="false">Personal <svg class="nav-chevron" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4l4 4 4-4"/></svg></button>
+        <div class="nav-dropdown"><a href="/llc-operating-agreement-template" class="nav-item">LLC Agreement (multi-member)</a><a href="/single-member-llc-operating-agreement-template" class="nav-item nav-item--active">Single-Member LLC</a><a href="/power-of-attorney-template" class="nav-item">Power of Attorney</a></div>
+      </div>
+    </nav>
+    <div class="header-actions">
+      <button class="btn-search" id="btn-search" aria-label="Search"><svg width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="9" r="6"/><path d="M15 15l3 3"/></svg></button>
+      <a href="/tools" class="btn-all-tools">All Templates</a>
+    </div>
+  </div>
+</header>
+<main class="page-wrap">
+  <div class="container">
+    <nav class="breadcrumb"><a href="/">Home</a><span>&#x203A;</span><a href="/llc-operating-agreement-template">LLC Agreement</a><span>&#x203A;</span><span aria-current="page">Single-Member</span></nav>
+    <h1 class="page-title" data-enter>Single-Member LLC Operating Agreement <span style="color:var(--ink-3);font-weight:400;font-size:.55em">2026</span></h1>
+    <p class="page-sub" data-enter data-delay="1">The simplest LLC structure &mdash; one owner, complete liability protection. Fill in your details, preview live, download as PDF. All 50 states. No sign-up.</p>
+    <div class="page-badges" data-enter data-delay="2">
+      <span class="page-badge"><svg width="11" height="11" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Free, no account</span>
+      <span class="page-badge"><svg width="11" height="11" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Single-member specific</span>
+      <span class="page-badge"><svg width="11" height="11" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> All 50 states</span>
+    </div>
+    <div class="doc-layout">
+      <div class="doc-form-panel" data-enter data-delay="1">
+        <div class="doc-card">
+          <div class="doc-card-header">LLC Details</div>
+          <div class="doc-card-body">
+            <div class="form-group"><label class="form-label">LLC Name (exact legal name)</label><input type="text" id="sm-name" class="form-input" placeholder="Smith Consulting LLC"></div>
+            <div class="form-group">
+              <label class="form-label">State of Formation</label>
+              <select id="sm-state" class="form-select">
+                <option value="">Select state...</option>
+                <option>Alabama</option><option>Alaska</option><option>Arizona</option><option>Arkansas</option>
+                <option>California</option><option>Colorado</option><option>Connecticut</option><option>Delaware</option>
+                <option>Florida</option><option>Georgia</option><option>Hawaii</option><option>Idaho</option>
+                <option>Illinois</option><option>Indiana</option><option>Iowa</option><option>Kansas</option>
+                <option>Kentucky</option><option>Louisiana</option><option>Maine</option><option>Maryland</option>
+                <option>Massachusetts</option><option>Michigan</option><option>Minnesota</option><option>Mississippi</option>
+                <option>Missouri</option><option>Montana</option><option>Nebraska</option><option>Nevada</option>
+                <option>New Hampshire</option><option>New Jersey</option><option>New Mexico</option><option>New York</option>
+                <option>North Carolina</option><option>North Dakota</option><option>Ohio</option><option>Oklahoma</option>
+                <option>Oregon</option><option>Pennsylvania</option><option>Rhode Island</option><option>South Carolina</option>
+                <option>South Dakota</option><option>Tennessee</option><option>Texas</option><option>Utah</option>
+                <option>Vermont</option><option>Virginia</option><option>Washington</option><option>West Virginia</option>
+                <option>Wisconsin</option><option>Wyoming</option>
+              </select>
+            </div>
+            <div class="form-group"><label class="form-label">Principal Office Address</label><input type="text" id="sm-addr" class="form-input" placeholder="123 Business St, Austin, TX 78701"></div>
+            <div class="form-group"><label class="form-label">Business Purpose</label><textarea id="sm-purpose" class="form-textarea" placeholder="Any lawful business activity permitted under the laws of the state of formation."></textarea></div>
+            <div class="form-group"><label class="form-label">Formation Date</label><input type="date" id="sm-formed" class="form-input"></div>
+            <div class="form-group">
+              <label class="form-label">Tax Classification</label>
+              <select id="sm-tax" class="form-select">
+                <option value="disregarded">Disregarded entity (default — taxed as sole proprietor)</option>
+                <option value="scorp">S-Corporation election (Form 2553 filed)</option>
+                <option value="ccorp">C-Corporation election (Form 8832 filed)</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="doc-card" style="margin-top:12px">
+          <div class="doc-card-header">Sole Member (Owner)</div>
+          <div class="doc-card-body">
+            <div class="form-group"><label class="form-label">Full Legal Name</label><input type="text" id="sm-member" class="form-input" placeholder="Jane Smith"></div>
+            <div class="form-group"><label class="form-label">Address</label><input type="text" id="sm-member-addr" class="form-input" placeholder="123 Business St, Austin, TX 78701"></div>
+            <div class="form-group"><label class="form-label">Capital Contribution ($)</label><input type="number" id="sm-contrib" class="form-input" placeholder="10000" min="0"></div>
+          </div>
+        </div>
+        <div class="btn-group" style="margin-top:12px">
+          <button class="doc-btn doc-btn--gold" onclick="window.print()">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 01-2-2v-5a2 2 0 012-2h16a2 2 0 012 2v5a2 2 0 01-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+            Download / Print PDF
+          </button>
+          <p style="font-size:11px;color:var(--ink-3);text-align:center;margin-top:4px">Sign and keep with your business records.</p>
+        </div>
+      </div>
+      <div class="doc-preview-panel" data-enter data-delay="2">
+        <div class="preview-toolbar">
+          <span class="preview-label">Live Preview</span>
+          <div class="preview-actions">
+            <button class="preview-btn preview-btn--primary" onclick="window.print()">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 01-2-2v-5a2 2 0 012-2h16a2 2 0 012 2v5a2 2 0 01-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+              Download PDF
+            </button>
+          </div>
+        </div>
+        <div class="legal-document" id="sm-preview"></div>
+      </div>
+    </div>
+    <div class="article-section" style="margin-top:40px">
+      <div class="article-body">
+        <h2>Why every single-member LLC needs an operating agreement</h2>
+        <p>Without an operating agreement, courts have sometimes pierced the corporate veil of single-member LLCs &mdash; meaning the owner was held personally liable for business debts. This happens when there is no clear evidence of separation between the owner and the LLC. An operating agreement creates that documented separation.</p>
+        <p>Banks also consistently require an operating agreement to open a business bank account. Without a business account, you co-mingle personal and business funds, which further weakens your liability protection.</p>
+        <p>Finally, California, Delaware, Maine, Missouri, and New York legally require all LLCs to have an operating agreement. If you are formed in one of these states and have no operating agreement, you are technically in violation of state law.</p>
+      </div>
+    </div>
+    <section class="faq-section" style="margin:48px -24px 0;padding:48px 24px">
+      <div class="faq-header"><p class="section-eyebrow">FAQ</p><h2 class="section-title" style="font-size:24px">Single-member LLC questions</h2></div>
+      <div class="faq-list">
+        <details class="faq-item"><summary class="faq-q">Does a single-member LLC need an operating agreement?</summary><div class="faq-a">Five states legally require one (CA, DE, ME, MO, NY). But even in states that do not require it, you should have one. Without it, state default rules govern your LLC, which may not match your intentions, and banks will typically refuse to open a business account without documentation of your LLC structure.</div></details>
+        <details class="faq-item"><summary class="faq-q">How is a single-member LLC taxed?</summary><div class="faq-a">By default, the IRS treats a single-member LLC as a &ldquo;disregarded entity&rdquo; &mdash; you report business income on Schedule C of your personal tax return and pay self-employment tax (15.3%) on net profits. Once your net profit exceeds roughly $50,000/year, electing S-Corporation status can reduce self-employment taxes significantly by splitting income between a salary and distributions.</div></details>
+        <details class="faq-item"><summary class="faq-q">Can I be the sole member and the registered agent?</summary><div class="faq-a">Yes, in most states. As registered agent, you receive legal documents and government notices on behalf of the LLC. Your address will be public record. Many business owners use a registered agent service ($50&ndash;$150/year) to keep their home address private and ensure availability during business hours.</div></details>
+        <details class="faq-item"><summary class="faq-q">Do I need a new operating agreement if I add a second member?</summary><div class="faq-a">Yes. When you add a second member, the LLC converts from a single-member to a multi-member LLC. You need a new operating agreement that covers both members&apos; ownership percentages, capital contributions, profit sharing, and voting rights. You may also need to update your state filing and IRS classification.</div></details>
+      </div>
+    </section>
+    <section class="related-section">
+      <p class="section-eyebrow">Related Templates</p>
+      <h2 class="section-title" style="font-size:22px;margin-bottom:16px">Build your business toolkit</h2>
+      <div class="tools-grid" style="grid-template-columns:repeat(auto-fill,minmax(260px,1fr))">
+        <a href="/llc-operating-agreement-template" class="tool-card"><div class="tc-icon tc-blue"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg></div><div><div class="tool-card-title">Multi-Member LLC Agreement</div><div class="tool-card-desc">For LLCs with 2 or more owners.</div></div></a>
+        <a href="/invoice-template" class="tool-card"><div class="tc-icon tc-green"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="2" x2="12" y2="22"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg></div><div><div class="tool-card-title">Invoice Template</div><div class="tool-card-desc">Bill clients professionally from your LLC.</div></div></a>
+        <a href="/independent-contractor-agreement-template" class="tool-card"><div class="tc-icon tc-gold"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/></svg></div><div><div class="tool-card-title">Contractor Agreement</div><div class="tool-card-desc">Hire contractors through your LLC.</div></div></a>
+      </div>
+    </section>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div><a href="/" class="footer-logo">FreeDocTemplates</a><p class="footer-tagline">Free legal document templates. No sign-up, no watermarks.</p><p class="footer-disclaimer" style="margin-top:8px">Not a law firm. For informational use only.</p></div>
+      <div><div class="footer-col-title">Business Formation</div><nav class="footer-nav"><a href="/llc-operating-agreement-template">LLC Agreement</a><a href="/single-member-llc-operating-agreement-template">Single-Member LLC</a></nav></div>
+      <div><div class="footer-col-title">Business Docs</div><nav class="footer-nav"><a href="/invoice-template">Invoice</a><a href="/nda-template">NDA</a><a href="/independent-contractor-agreement-template">Contractor Agreement</a></nav></div>
+      <div><div class="footer-col-title">Personal</div><nav class="footer-nav"><a href="/power-of-attorney-template">Power of Attorney</a><a href="/bill-of-sale-template">Bill of Sale</a></nav></div>
+    </div>
+    <div class="footer-bottom"><p>&copy; 2026 FreeDocTemplates.xyz</p></div>
+  </div>
+</footer>
+<script>
+(function(){
+  var TAX_CLAUSES = {
+    disregarded: 'The Company shall be treated as a disregarded entity for federal and state income tax purposes. All income, deductions, gains, losses, and credits of the Company shall be reported on the Member\'s personal income tax return.',
+    scorp: 'The Company has elected to be treated as an S-Corporation for federal income tax purposes by filing Form 2553 with the IRS. The Member shall receive a reasonable salary as an employee of the Company, with remaining profits distributed as S-Corp distributions.',
+    ccorp: 'The Company has elected to be treated as a C-Corporation for federal income tax purposes by filing Form 8832 with the IRS.'
+  };
+  function gv(id){ var el=document.getElementById(id); return el?(el.value||'').trim():''; }
+  function field(v,ph){ return v?'<span class="doc-field">'+v+'</span>':'<span class="doc-field empty">'+ph+'</span>'; }
+
+  function render() {
+    var name    = gv('sm-name')       || '[LLC Name]';
+    var state   = gv('sm-state')      || '[State]';
+    var addr    = gv('sm-addr')       || '[Principal Office]';
+    var purpose = gv('sm-purpose')    || 'Any lawful business activity permitted under the laws of the state of formation.';
+    var formed  = gv('sm-formed') ? new Date(gv('sm-formed')+'T12:00:00').toLocaleDateString('en-US',{year:'numeric',month:'long',day:'numeric'}) : '[Formation Date]';
+    var tax     = gv('sm-tax')        || 'disregarded';
+    var member  = gv('sm-member')     || '[Member Name]';
+    var mAddr   = gv('sm-member-addr')|| '[Member Address]';
+    var contrib = gv('sm-contrib')    || '0';
+
+    document.getElementById('sm-preview').innerHTML =
+      '<div class="doc-title">SINGLE-MEMBER LLC OPERATING AGREEMENT</div>'
+      +'<div class="doc-subtitle">of '+field(gv('sm-name'),name)+'<br>A '+state+' Single-Member Limited Liability Company</div>'
+      +'<div class="doc-clause"><p>This Operating Agreement (the &ldquo;Agreement&rdquo;) of <strong>'+field(gv('sm-name'),name)+'</strong> (the &ldquo;Company&rdquo;), is entered into and effective as of '+formed+', by the sole member named below.</p></div>'
+      +'<div class="doc-section"><div class="doc-section-title">Article I &mdash; Formation</div>'
+      +'<p><strong>1.1 Name.</strong> '+field(gv('sm-name'),name)+'</p>'
+      +'<p><strong>1.2 State.</strong> Organized under the laws of the State of '+state+'.</p>'
+      +'<p><strong>1.3 Principal Office.</strong> '+field(gv('sm-addr'),addr)+'</p>'
+      +'<p><strong>1.4 Purpose.</strong> '+purpose+'</p></div>'
+      +'<div class="doc-section"><div class="doc-section-title">Article II &mdash; Sole Member</div>'
+      +'<table class="doc-table"><thead><tr><th>Member</th><th>Address</th><th>Ownership</th><th>Capital Contribution</th></tr></thead>'
+      +'<tbody><tr><td><strong>'+field(gv('sm-member'),member)+'</strong></td><td>'+field(gv('sm-member-addr'),mAddr)+'</td><td>100%</td><td>$'+contrib+'</td></tr></tbody></table></div>'
+      +'<div class="doc-section"><div class="doc-section-title">Article III &mdash; Management</div>'
+      +'<p>The Company is member-managed. The sole member, '+field(gv('sm-member'),member)+', has full and complete authority to manage, operate, and conduct the business of the Company and to bind the Company in all matters.</p></div>'
+      +'<div class="doc-section"><div class="doc-section-title">Article IV &mdash; Tax Treatment</div>'
+      +'<p>'+TAX_CLAUSES[tax]+'</p></div>'
+      +'<div class="doc-section"><div class="doc-section-title">Article V &mdash; Distributions</div>'
+      +'<p>Distributions shall be made at the sole discretion of the Member at such times and in such amounts as the Member determines, consistent with applicable law and maintaining adequate reserves for Company operations.</p></div>'
+      +'<div class="doc-section"><div class="doc-section-title">Article VI &mdash; Liability Protection</div>'
+      +'<p>No Member shall be personally liable for any debt, obligation, or liability of the Company solely by reason of being a member of the Company, except as otherwise required by applicable law.</p></div>'
+      +'<div class="doc-section"><div class="doc-section-title">Article VII &mdash; Dissolution</div>'
+      +'<p>The Company may be dissolved upon written decision of the sole Member, by operation of law, or as otherwise provided by the laws of the State of '+state+'.</p></div>'
+      +'<p style="font-size:11px;color:#555;margin-bottom:24px">IN WITNESS WHEREOF, the undersigned sole member has executed this Agreement as of '+formed+'.</p>'
+      +'<div class="doc-sig-row"><div class="doc-sig-block"><div style="height:40px"></div><div><strong>Sole Member Signature</strong></div><div class="doc-sig-label">'+field(gv('sm-member'),member)+'</div><div class="doc-sig-label">100% Ownership</div><div class="doc-sig-label">Date: ________</div></div></div>';
+  }
+
+  document.querySelectorAll('[id^="sm-"]').forEach(function(el){
+    el.addEventListener('input', render);
+    el.addEventListener('change', render);
+  });
+
+  var today = new Date().toISOString().split('T')[0];
+  document.getElementById('sm-formed').value = today;
+  render();
+})();
+</script>
+<script src="/shared/scripts.js?v=1" defer></script>
+</body>
+</html>`;
+
+fs.writeFileSync(p, html);
+console.log('single-member-llc ok', fs.statSync(p).size);

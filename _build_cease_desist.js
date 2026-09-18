@@ -1,0 +1,254 @@
+const fs = require('fs');
+const p = 'C:/Users/mastr/claude co/legal-docs/cease-and-desist-letter-template.html';
+
+const html = `<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free Cease and Desist Letter Template 2026 | Fill In &amp; Download PDF</title>
+<meta name="description" content="Free cease and desist letter template. Copyright infringement, harassment, defamation, debt collection, and trademark. Fill in, preview live, download PDF. No sign-up.">
+<link rel="canonical" href="https://www.freedoctemplates.xyz/cease-and-desist-letter-template">
+<meta property="og:title" content="Free Cease and Desist Letter Template 2026 — Fill In &amp; Download PDF">
+<meta property="og:type" content="website">
+<meta name="robots" content="index,follow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap">
+<link rel="stylesheet" href="/shared/styles.css?v=1">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Free Cease and Desist Letter Template 2026","url":"https://www.freedoctemplates.xyz/cease-and-desist-letter-template","description":"Create a cease and desist letter online. Copyright, harassment, defamation, trademark. Download as PDF instantly. No sign-up.","applicationCategory":"LegalApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is a cease and desist letter legally binding?","acceptedAnswer":{"@type":"Answer","text":"A cease and desist letter itself is not a court order — it is a formal demand letter. The recipient is not legally required to comply. However, sending a C&D letter is important because: it establishes that you notified the other party of the violation (relevant for damages calculations), it documents the timeline of the dispute, it often resolves the issue without court action, and it is a prerequisite for legal action in some cases."}},{"@type":"Question","name":"Do I need a lawyer to send a cease and desist letter?","acceptedAnswer":{"@type":"Answer","text":"No. You can send a cease and desist letter without an attorney. A letter from an attorney carries more weight and may be more effective, but a well-written self-drafted letter can be effective for copyright infringement, harassment, and defamation claims. For complex trademark disputes or when litigation is likely, hiring an attorney is recommended."}},{"@type":"Question","name":"What happens if someone ignores a cease and desist letter?","acceptedAnswer":{"@type":"Answer","text":"If the recipient ignores the letter and continues the harmful behavior, your options are: (1) file a lawsuit in civil court, (2) file a DMCA takedown for copyright infringement online, (3) report to relevant authorities for harassment or stalking, (4) file a complaint with professional licensing boards if applicable. The letter documents that you gave the party an opportunity to stop before litigation."}},{"@type":"Question","name":"What is the response time stated in a cease and desist letter?","acceptedAnswer":{"@type":"Answer","text":"Most cease and desist letters give the recipient 7 to 30 days to respond or comply. For time-sensitive situations (ongoing online harassment, active copyright infringement), 7-14 days is appropriate. For trademark disputes, 30 days is standard. The deadline should be firm but realistic given postal delivery times."}}]}
+</script>
+</head>
+<body>
+<div class="cmd-overlay" id="cmd-overlay" role="dialog" aria-modal="true" aria-label="Search templates">
+  <div class="cmd-modal">
+    <div class="cmd-search-row">
+      <span class="cmd-search-icon"><svg width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="9" r="6"/><path d="M15 15l3 3"/></svg></span>
+      <input class="cmd-input" id="cmd-input" type="text" placeholder="Search 15+ templates..." autocomplete="off" spellcheck="false">
+      <kbd class="cmd-kbd-esc" onclick="closeCmd()">esc</kbd>
+    </div>
+    <div class="cmd-body" id="cmd-body"></div>
+    <div class="cmd-footer"><span class="cmd-hint"><kbd class="cmd-key">&uarr;&darr;</kbd> navigate</span><span class="cmd-hint"><kbd class="cmd-key">&#x21b5;</kbd> open</span><span class="cmd-hint"><kbd class="cmd-key">esc</kbd> close</span></div>
+  </div>
+</div>
+<header class="site-header">
+  <div class="header-inner">
+    <a href="/" class="site-logo">FreeDoc<span>Templates</span></a>
+    <nav class="main-nav" aria-label="Main">
+      <div class="nav-group">
+        <button class="nav-trigger" aria-haspopup="true" aria-expanded="false">Business <svg class="nav-chevron" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4l4 4 4-4"/></svg></button>
+        <div class="nav-dropdown"><a href="/invoice-template" class="nav-item">Invoice Template</a><a href="/independent-contractor-agreement-template" class="nav-item">Contractor Agreement</a><a href="/nda-template" class="nav-item">NDA Template</a><a href="/cease-and-desist-letter-template" class="nav-item nav-item--active">Cease &amp; Desist</a></div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-trigger" aria-haspopup="true" aria-expanded="false">Personal <svg class="nav-chevron" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4l4 4 4-4"/></svg></button>
+        <div class="nav-dropdown"><a href="/power-of-attorney-template" class="nav-item">Power of Attorney</a><a href="/llc-operating-agreement-template" class="nav-item">LLC Agreement</a><a href="/bill-of-sale-template" class="nav-item">Bill of Sale</a></div>
+      </div>
+    </nav>
+    <div class="header-actions">
+      <button class="btn-search" id="btn-search" aria-label="Search"><svg width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="9" r="6"/><path d="M15 15l3 3"/></svg></button>
+      <a href="/tools" class="btn-all-tools">All Templates</a>
+    </div>
+  </div>
+</header>
+<main class="page-wrap">
+  <div class="container">
+    <nav class="breadcrumb"><a href="/">Home</a><span>&#x203A;</span><span aria-current="page">Cease and Desist Letter</span></nav>
+    <h1 class="page-title" data-enter>Free Cease &amp; Desist Letter <span style="color:var(--ink-3);font-weight:400;font-size:.65em">2026</span></h1>
+    <p class="page-sub" data-enter data-delay="1">Copyright, harassment, defamation, trademark infringement, and debt collection. Fill in your details, preview live, and download as PDF.</p>
+    <div class="page-badges" data-enter data-delay="2">
+      <span class="page-badge"><svg width="11" height="11" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Free, no account</span>
+      <span class="page-badge"><svg width="11" height="11" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> 5 letter types</span>
+      <span class="page-badge"><svg width="11" height="11" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> No watermark</span>
+    </div>
+    <div class="doc-layout">
+      <div class="doc-form-panel" data-enter data-delay="1">
+        <div class="doc-card">
+          <div class="doc-card-header">Letter Type</div>
+          <div class="doc-card-body">
+            <div class="form-group">
+              <label class="form-label">Type of Cease &amp; Desist</label>
+              <select id="cd-type" class="form-select">
+                <option value="copyright">Copyright Infringement</option>
+                <option value="trademark">Trademark Infringement</option>
+                <option value="harassment">Harassment / Stalking</option>
+                <option value="defamation">Defamation / Slander / Libel</option>
+                <option value="debt">Debt Collection Harassment</option>
+              </select>
+            </div>
+            <p class="form-hint" id="cd-type-hint">Copyright infringement: unauthorized use of your creative work (photos, writing, music, software).</p>
+          </div>
+        </div>
+        <div class="doc-card" style="margin-top:12px">
+          <div class="doc-card-header">Sender (You)</div>
+          <div class="doc-card-body">
+            <div class="form-group"><label class="form-label">Your Full Name</label><input type="text" id="cd-sender" class="form-input" placeholder="Jane Smith"></div>
+            <div class="form-group"><label class="form-label">Your Address</label><input type="text" id="cd-sender-addr" class="form-input" placeholder="123 Main St, Austin, TX 78701"></div>
+            <div class="form-group"><label class="form-label">Your Email / Phone</label><input type="text" id="cd-sender-contact" class="form-input" placeholder="jane@email.com / (512) 555-0100"></div>
+          </div>
+        </div>
+        <div class="doc-card" style="margin-top:12px">
+          <div class="doc-card-header">Recipient</div>
+          <div class="doc-card-body">
+            <div class="form-group"><label class="form-label">Recipient Name / Company</label><input type="text" id="cd-recipient" class="form-input" placeholder="John Doe / XYZ Corp"></div>
+            <div class="form-group"><label class="form-label">Recipient Address</label><input type="text" id="cd-recipient-addr" class="form-input" placeholder="456 Oak Ave, Dallas, TX 75201"></div>
+          </div>
+        </div>
+        <div class="doc-card" style="margin-top:12px">
+          <div class="doc-card-header">Violation Details</div>
+          <div class="doc-card-body">
+            <div class="form-group"><label class="form-label">Describe the Violation</label><textarea id="cd-violation" class="form-textarea" placeholder="Describe what the recipient is doing that you want them to stop..."></textarea></div>
+            <div class="form-group"><label class="form-label">Date Violation Began (approx.)</label><input type="date" id="cd-violation-date" class="form-input"></div>
+            <div class="form-row">
+              <div class="form-group"><label class="form-label">Letter Date</label><input type="date" id="cd-date" class="form-input"></div>
+              <div class="form-group"><label class="form-label">Response Deadline (days)</label>
+                <select id="cd-deadline" class="form-select">
+                  <option value="7">7 days</option>
+                  <option value="14" selected>14 days</option>
+                  <option value="21">21 days</option>
+                  <option value="30">30 days</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="btn-group" style="margin-top:12px">
+          <button class="doc-btn doc-btn--gold" onclick="window.print()">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 01-2-2v-5a2 2 0 012-2h16a2 2 0 012 2v5a2 2 0 01-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+            Download / Print PDF
+          </button>
+          <p style="font-size:11px;color:var(--ink-3);text-align:center;margin-top:4px">Send via certified mail to create a delivery record.</p>
+        </div>
+      </div>
+      <div class="doc-preview-panel" data-enter data-delay="2">
+        <div class="preview-toolbar">
+          <span class="preview-label">Live Preview</span>
+          <div class="preview-actions">
+            <button class="preview-btn preview-btn--primary" onclick="window.print()">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 01-2-2v-5a2 2 0 012-2h16a2 2 0 012 2v5a2 2 0 01-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+              Download PDF
+            </button>
+          </div>
+        </div>
+        <div class="legal-document" id="cd-preview"></div>
+      </div>
+    </div>
+    <section class="faq-section" style="margin:48px -24px 0;padding:48px 24px">
+      <div class="faq-header"><p class="section-eyebrow">FAQ</p><h2 class="section-title" style="font-size:24px">Cease &amp; desist questions</h2></div>
+      <div class="faq-list">
+        <details class="faq-item"><summary class="faq-q">Is a cease and desist letter legally binding?</summary><div class="faq-a">A cease and desist letter is a formal demand, not a court order. The recipient is not legally required to comply. However, it documents that you put the other party on notice, which is important for calculating damages and demonstrating bad faith if you later pursue legal action.</div></details>
+        <details class="faq-item"><summary class="faq-q">Should I send it via certified mail?</summary><div class="faq-a">Yes, always. Sending via certified mail with return receipt creates a legal record proving delivery date and recipient identity. For online infringement, also send via email to create a timestamp. Keep copies of everything.</div></details>
+        <details class="faq-item"><summary class="faq-q">What if they ignore the letter?</summary><div class="faq-a">If ignored, your next steps are: file a DMCA takedown notice (for copyright online), file in small claims or civil court, contact platforms to report the violation (social media, hosting providers), or consult an attorney about injunctive relief (emergency court order to stop the behavior immediately).</div></details>
+        <details class="faq-item"><summary class="faq-q">Can I get in trouble for sending a cease and desist?</summary><div class="faq-a">If your claims are legitimate, no. However, sending a cease and desist with false or frivolous claims can expose you to a counterclaim for abuse of process or tortious interference. Only send a C&D if you have a genuine, documented legal basis for your demand.</div></details>
+      </div>
+    </section>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div><a href="/" class="footer-logo">FreeDocTemplates</a><p class="footer-tagline">Free legal document templates. No sign-up, no watermarks.</p><p class="footer-disclaimer" style="margin-top:8px">Not a law firm. For informational use only.</p></div>
+      <div><div class="footer-col-title">Business</div><nav class="footer-nav"><a href="/invoice-template">Invoice</a><a href="/nda-template">NDA</a><a href="/cease-and-desist-letter-template">Cease &amp; Desist</a></nav></div>
+      <div><div class="footer-col-title">Property</div><nav class="footer-nav"><a href="/bill-of-sale-template">Bill of Sale</a><a href="/lease-agreement-template">Lease Agreement</a></nav></div>
+      <div><div class="footer-col-title">Personal</div><nav class="footer-nav"><a href="/power-of-attorney-template">Power of Attorney</a><a href="/llc-operating-agreement-template">LLC Agreement</a></nav></div>
+    </div>
+    <div class="footer-bottom"><p>&copy; 2026 FreeDocTemplates.xyz</p></div>
+  </div>
+</footer>
+<script>
+(function(){
+  var TYPE_HINTS = {
+    copyright: 'Unauthorized use of your creative work: photos, writing, music, software, videos.',
+    trademark: 'Unauthorized use of your brand name, logo, or trademark in commerce.',
+    harassment: 'Unwanted contact, stalking, online harassment, or threatening behavior.',
+    defamation: 'False statements of fact published or spoken that damage your reputation.',
+    debt: 'Harassment by debt collectors violating the Fair Debt Collection Practices Act (FDCPA).'
+  };
+  var TYPE_DEMANDS = {
+    copyright: ['Immediately cease all use, reproduction, distribution, and display of the Copyrighted Work.','Remove all copies of the Copyrighted Work from all websites, social media, and platforms within the deadline stated below.','Provide written confirmation that all infringing copies have been removed.','Account for all profits derived from the unauthorized use of the Copyrighted Work.'],
+    trademark: ['Immediately cease all use of the Trademark in connection with any goods, services, or business operations.','Remove all materials bearing the Trademark from websites, storefronts, and promotional materials.','Destroy or return all inventory and marketing materials bearing the Trademark.','Provide written confirmation of compliance within the deadline stated below.'],
+    harassment: ['Immediately cease all contact with the undersigned, including but not limited to: phone calls, text messages, emails, social media messages, and physical contact.','Cease all surveillance, following, or monitoring of the undersigned or their family members.','Remove all posts, photos, or content about the undersigned from social media and online platforms.','Acknowledge receipt of this letter in writing.'],
+    defamation: ['Immediately cease making, publishing, or distributing any false and defamatory statements about the undersigned.','Retract and publicly correct all false statements previously published or communicated.','Remove all defamatory content from all websites, social media, and online platforms.','Provide written confirmation of removal and retraction within the deadline stated below.'],
+    debt: ['Immediately cease all collection calls, letters, and communications to the undersigned pursuant to 15 U.S.C. Section 1692c(c) of the Fair Debt Collection Practices Act (FDCPA).','Cease all communication with the undersigned except to confirm cessation of collection activity or to notify of specific legal action.','Provide verification of the alleged debt as required under 15 U.S.C. Section 1692g.','Acknowledge receipt of this notice in writing within the deadline stated below.']
+  };
+  var TYPE_WARNINGS = {
+    copyright: 'If you fail to comply, I will have no choice but to pursue all available legal remedies, including but not limited to filing a lawsuit for copyright infringement under 17 U.S.C. Section 501, which may entitle me to statutory damages of up to $150,000 per work for willful infringement, plus attorney\'s fees.',
+    trademark: 'If you fail to comply, I will pursue all available remedies under the Lanham Act (15 U.S.C. Section 1051 et seq.), including injunctive relief and damages for trademark infringement.',
+    harassment: 'If you fail to comply immediately, I will pursue all available legal and civil remedies, including a restraining order and civil harassment lawsuit, and will report your conduct to law enforcement authorities.',
+    defamation: 'If you fail to comply, I will pursue legal action for defamation, including claims for compensatory and punitive damages resulting from your false and malicious statements.',
+    debt: 'Failure to comply with this notice constitutes a violation of the Fair Debt Collection Practices Act (15 U.S.C. Section 1692 et seq.), for which I may seek actual damages, statutory damages up to $1,000, plus attorney\'s fees and court costs.'
+  };
+
+  function gv(id){ var el=document.getElementById(id); return el?(el.value||'').trim():''; }
+  function field(v,ph){ return v?'<span class="doc-field">'+v+'</span>':'<span class="doc-field empty">'+ph+'</span>'; }
+  function fmtD(d){ return d?new Date(d+'T12:00:00').toLocaleDateString('en-US',{year:'numeric',month:'long',day:'numeric'}):null; }
+
+  function getDeadlineDate() {
+    var base = gv('cd-date');
+    var days = parseInt(gv('cd-deadline'))||14;
+    if(!base) return '[Deadline Date]';
+    var d = new Date(base+'T12:00:00');
+    d.setDate(d.getDate()+days);
+    return d.toLocaleDateString('en-US',{year:'numeric',month:'long',day:'numeric'});
+  }
+
+  function render() {
+    var type     = gv('cd-type');
+    var sender   = gv('cd-sender')          || '[Your Name]';
+    var sAddr    = gv('cd-sender-addr')     || '[Your Address]';
+    var sContact = gv('cd-sender-contact')  || '';
+    var recip    = gv('cd-recipient')       || '[Recipient Name]';
+    var rAddr    = gv('cd-recipient-addr')  || '[Recipient Address]';
+    var viol     = gv('cd-violation')       || '[Describe the violation]';
+    var violDate = fmtD(gv('cd-violation-date')) || '[date violation began]';
+    var letterDate = fmtD(gv('cd-date')) || new Date().toLocaleDateString('en-US',{year:'numeric',month:'long',day:'numeric'});
+    var deadline = getDeadlineDate();
+    var days     = gv('cd-deadline') || '14';
+    var demands  = TYPE_DEMANDS[type] || TYPE_DEMANDS.copyright;
+    var warning  = TYPE_WARNINGS[type] || TYPE_WARNINGS.copyright;
+
+    var typeLabels = { copyright:'COPYRIGHT INFRINGEMENT', trademark:'TRADEMARK INFRINGEMENT', harassment:'HARASSMENT AND STALKING', defamation:'DEFAMATION AND FALSE STATEMENTS', debt:'DEBT COLLECTION HARASSMENT' };
+
+    document.getElementById('cd-preview').innerHTML =
+      '<div style="margin-bottom:24px"><div style="font-weight:700;font-size:13px">'+field(gv('cd-sender'),sender)+'</div><div style="font-size:12px;color:#555">'+field(gv('cd-sender-addr'),sAddr)+'</div>'+(sContact?'<div style="font-size:12px;color:#555">'+sContact+'</div>':'')+'</div>'
+      +'<div style="margin-bottom:24px"><div style="font-size:12px;color:#555">'+letterDate+'</div></div>'
+      +'<div style="margin-bottom:24px"><div style="font-weight:700;font-size:13px">'+field(gv('cd-recipient'),recip)+'</div><div style="font-size:12px;color:#555">'+field(gv('cd-recipient-addr'),rAddr)+'</div></div>'
+      +'<div class="doc-title" style="font-size:14px;margin-bottom:16px">RE: CEASE AND DESIST &mdash; '+(typeLabels[type]||'')+'</div>'
+      +'<div class="doc-clause"><p>Dear '+field(gv('cd-recipient'),recip)+',</p>'
+      +'<p>I am writing to formally demand that you immediately cease and desist from your ongoing '+(type==='debt'?'unlawful debt collection practices':'illegal and unauthorized conduct')+', which began on or around '+violDate+' and is described as follows:</p>'
+      +'<p style="background:#fef9e7;border-left:3px solid #b45309;padding:10px 14px;margin:12px 0">'+field(gv('cd-violation'),viol)+'</p></div>'
+      +'<div class="doc-section"><div class="doc-section-title">Demands</div>'
+      +'<p>You are hereby demanded to take the following actions:</p>'
+      +'<ol class="doc-num-list">'+demands.map(function(d){ return '<li>'+d+'</li>'; }).join('')+'</ol></div>'
+      +'<div class="doc-section"><div class="doc-section-title">Deadline</div>'
+      +'<p>You have <strong>'+days+' days</strong> from the date of this letter (by <strong>'+deadline+'</strong>) to comply fully with these demands.</p></div>'
+      +'<div class="doc-section"><div class="doc-section-title">Legal Consequences</div><p>'+warning+'</p>'
+      +'<p>This letter is not an exhaustive statement of my legal rights or remedies, all of which are expressly reserved.</p></div>'
+      +'<p style="margin-top:32px">Sincerely,</p>'
+      +'<div class="doc-sig-block" style="margin-top:8px"><div style="height:40px"></div><div class="doc-sig-label">'+field(gv('cd-sender'),sender)+'</div><div class="doc-sig-label">'+letterDate+'</div></div>';
+  }
+
+  document.getElementById('cd-type').addEventListener('change', function(){
+    document.getElementById('cd-type-hint').textContent = TYPE_HINTS[this.value]||'';
+    render();
+  });
+  document.querySelectorAll('[id^="cd-"]').forEach(function(el){
+    el.addEventListener('input', render);
+    el.addEventListener('change', render);
+  });
+
+  var today = new Date().toISOString().split('T')[0];
+  document.getElementById('cd-date').value = today;
+  document.getElementById('cd-violation-date').value = today;
+  render();
+})();
+</script>
+<script src="/shared/scripts.js?v=1" defer></script>
+</body>
+</html>`;
+
+fs.writeFileSync(p, html);
+console.log('cease-desist ok', fs.statSync(p).size);

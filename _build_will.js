@@ -1,0 +1,279 @@
+const fs = require('fs');
+const base = 'C:/Users/mastr/claude co/legal-docs/';
+
+const html = `<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free Last Will and Testament Template 2026 | Fill In &amp; Download PDF</title>
+<meta name="description" content="Free last will and testament template 2026. Designate executor, distribute assets, name guardians for minor children. Fill in, preview live, download PDF. No sign-up.">
+<link rel="canonical" href="https://www.freedoctemplates.xyz/last-will-testament-template">
+<meta property="og:title" content="Free Last Will and Testament Template 2026">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap">
+<link rel="stylesheet" href="/shared/styles.css?v=1">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Free Last Will and Testament Template","description":"Free online last will and testament generator — fill in your details, preview the legal document, download as PDF.","url":"https://www.freedoctemplates.xyz/last-will-testament-template","applicationCategory":"LegalService","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script>
+</head>
+<body>
+<header class="site-header"><div class="header-inner"><a href="/" class="site-logo">FreeDoc<span>Templates</span></a><nav class="main-nav" aria-label="Main"><div class="nav-group"><button class="nav-trigger" aria-haspopup="true" aria-expanded="false">Business <svg class="nav-chevron" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4l4 4 4-4"/></svg></button><div class="nav-dropdown"><a href="/invoice-template" class="nav-item">Invoice Template</a><a href="/nda-template" class="nav-item">NDA Template</a><a href="/independent-contractor-agreement-template" class="nav-item">Contractor Agreement</a></div></div><div class="nav-group"><button class="nav-trigger" aria-haspopup="true" aria-expanded="false">Personal <svg class="nav-chevron" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4l4 4 4-4"/></svg></button><div class="nav-dropdown"><a href="/power-of-attorney-template" class="nav-item">Power of Attorney</a><a href="/last-will-testament-template" class="nav-item">Last Will &amp; Testament</a><a href="/lease-agreement-template" class="nav-item">Lease Agreement</a></div></div></nav><div class="header-actions"><a href="/tools" class="btn-all-tools">All Templates</a></div></div></header>
+<main class="page-wrap">
+<div class="container">
+<nav class="breadcrumb"><a href="/">Home</a><span>›</span><a href="/tools">Templates</a><span>›</span><span aria-current="page">Last Will &amp; Testament</span></nav>
+<h1 class="page-title" data-enter>Free Last Will and Testament Template</h1>
+<p class="page-sub" data-enter data-delay="1">Fill in your details below, see a live legal preview, and download as PDF. Free, no account required, no watermarks.</p>
+<div class="page-badges" data-enter data-delay="2"><span class="page-badge">✓ Free, no account</span><span class="page-badge">✓ Live preview</span><span class="page-badge">✓ PDF download</span><span class="page-badge">✓ All 50 states</span></div>
+</div>
+<div class="container doc-layout">
+<!-- FORM -->
+<div class="doc-form-panel">
+  <div class="form-section">
+    <div class="form-section-title">Testator (Person Making the Will)</div>
+    <div class="form-row"><label class="form-label">Full Legal Name</label><input class="form-input" id="wl-name" placeholder="John Michael Smith" oninput="render()"></div>
+    <div class="form-row two-col"><div><label class="form-label">City</label><input class="form-input" id="wl-city" placeholder="Denver" oninput="render()"></div><div><label class="form-label">State</label><select class="form-input" id="wl-state" onchange="render()"><option value="">— Select —</option><option>Alabama</option><option>Alaska</option><option>Arizona</option><option>Arkansas</option><option>California</option><option>Colorado</option><option>Connecticut</option><option>Delaware</option><option>Florida</option><option>Georgia</option><option>Hawaii</option><option>Idaho</option><option>Illinois</option><option>Indiana</option><option>Iowa</option><option>Kansas</option><option>Kentucky</option><option>Louisiana</option><option>Maine</option><option>Maryland</option><option>Massachusetts</option><option>Michigan</option><option>Minnesota</option><option>Mississippi</option><option>Missouri</option><option>Montana</option><option>Nebraska</option><option>Nevada</option><option>New Hampshire</option><option>New Jersey</option><option>New Mexico</option><option>New York</option><option>North Carolina</option><option>North Dakota</option><option>Ohio</option><option>Oklahoma</option><option>Oregon</option><option>Pennsylvania</option><option>Rhode Island</option><option>South Carolina</option><option>South Dakota</option><option>Tennessee</option><option>Texas</option><option>Utah</option><option>Vermont</option><option>Virginia</option><option>Washington</option><option>West Virginia</option><option>Wisconsin</option><option>Wyoming</option></select></div></div>
+    <div class="form-row"><label class="form-label">Date of Birth</label><input class="form-input" id="wl-dob" type="date" oninput="render()"></div>
+    <div class="form-row"><label class="form-label">Marital Status</label><select class="form-input" id="wl-marital" onchange="render()"><option value="single">Single</option><option value="married">Married</option><option value="divorced">Divorced</option><option value="widowed">Widowed</option></select></div>
+    <div class="form-row" id="wl-spouse-row" style="display:none"><label class="form-label">Spouse's Full Name</label><input class="form-input" id="wl-spouse" placeholder="Jane Marie Smith" oninput="render()"></div>
+  </div>
+  <div class="form-section">
+    <div class="form-section-title">Executor</div>
+    <div class="form-row"><label class="form-label">Executor Full Name</label><input class="form-input" id="wl-exec" placeholder="Robert James Smith" oninput="render()"></div>
+    <div class="form-row"><label class="form-label">Relationship to Testator</label><input class="form-input" id="wl-exec-rel" placeholder="Brother" oninput="render()"></div>
+    <div class="form-row"><label class="form-label">Alternate Executor</label><input class="form-input" id="wl-alt-exec" placeholder="Susan L. Davis" oninput="render()"></div>
+  </div>
+  <div class="form-section">
+    <div class="form-section-title">Beneficiaries &amp; Asset Distribution</div>
+    <div id="wl-benes"></div>
+    <button class="doc-btn doc-btn--ghost" type="button" onclick="addBene()" style="width:100%;margin-top:8px">+ Add Beneficiary</button>
+  </div>
+  <div class="form-section">
+    <div class="form-section-title">Specific Bequests <span style="font-weight:400;color:var(--ink-3);font-size:12px">(optional)</span></div>
+    <div id="wl-bequests"></div>
+    <button class="doc-btn doc-btn--ghost" type="button" onclick="addBequest()" style="width:100%;margin-top:8px">+ Add Specific Bequest</button>
+  </div>
+  <div class="form-section">
+    <div class="form-section-title">Minor Children</div>
+    <div class="form-row"><label class="form-label">Do you have minor children?</label><select class="form-input" id="wl-has-children" onchange="toggleChildren();render()"><option value="no">No</option><option value="yes">Yes</option></select></div>
+    <div id="wl-children-section" style="display:none">
+      <div id="wl-children"></div>
+      <button class="doc-btn doc-btn--ghost" type="button" onclick="addChild()" style="width:100%;margin-top:8px">+ Add Child</button>
+      <div class="form-row" style="margin-top:12px"><label class="form-label">Guardian Full Name</label><input class="form-input" id="wl-guardian" placeholder="Mary Anne Jones" oninput="render()"></div>
+      <div class="form-row"><label class="form-label">Alternate Guardian</label><input class="form-input" id="wl-alt-guardian" placeholder="Thomas B. Jones" oninput="render()"></div>
+    </div>
+  </div>
+  <div class="form-section">
+    <div class="form-section-title">Signing Date</div>
+    <div class="form-row"><label class="form-label">Date of Signing</label><input class="form-input" id="wl-date" type="date" oninput="render()"></div>
+  </div>
+  <div class="form-section">
+    <button class="doc-btn doc-btn--gold" type="button" onclick="window.print()" style="width:100%"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 01-2-2v-5a2 2 0 012-2h16a2 2 0 012 2v5a2 2 0 01-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg> Download / Print PDF</button>
+    <p style="font-size:11px;color:var(--ink-3);text-align:center;margin-top:6px">Use "Save as PDF" in your browser's print dialog</p>
+  </div>
+</div>
+<!-- PREVIEW -->
+<div class="doc-preview-panel">
+  <div class="doc-preview-header"><span>Live Preview</span><span style="font-size:11px;color:var(--ink-3)">Updates as you type</span></div>
+  <div class="legal-document" id="wl-preview">
+    <div class="doc-title">LAST WILL AND TESTAMENT</div>
+    <div class="doc-subtitle">Fill in the form to see your document</div>
+  </div>
+</div>
+</div>
+
+<!-- FAQ -->
+<div class="container" style="margin-top:56px">
+<section class="faq-section" style="margin:0 -24px;padding:48px 24px">
+<div class="faq-header"><p class="section-eyebrow">FAQ</p><h2 class="section-title" style="font-size:24px">Last will and testament questions</h2></div>
+<div class="faq-list">
+<details class="faq-item"><summary class="faq-q">Does a will need to be notarized to be valid?</summary><div class="faq-a">Most states do not require notarization for a will to be valid — witnesses are the key requirement. However, a "self-proving affidavit" notarized at signing allows the will to be admitted to probate without requiring witnesses to testify, which is why notarization is strongly recommended even when not strictly required.</div></details>
+<details class="faq-item"><summary class="faq-q">How many witnesses does a will require?</summary><div class="faq-a">Almost every US state requires 2 adult witnesses who are not beneficiaries under the will. Vermont requires 3 witnesses. Witnesses should watch you sign and then sign in your presence. Using a beneficiary as a witness does not void the will in most states, but may void that beneficiary's gift.</div></details>
+<details class="faq-item"><summary class="faq-q">Can I write my own will without a lawyer?</summary><div class="faq-a">Yes. A self-written will (also called a "self-prepared will") is legally valid in all 50 states if it meets the state's signing and witnessing requirements. For simple estates, a template will is perfectly adequate. Complex situations — blended families, business ownership, large estates, or contested circumstances — benefit from attorney review.</div></details>
+<details class="faq-item"><summary class="faq-q">What happens to assets not mentioned in my will?</summary><div class="faq-a">Assets not specifically bequeathed pass through the "residuary estate" clause — this template includes one. Without a residuary clause, unaddressed assets pass under your state's intestacy laws (usually to a spouse, then children). Assets with beneficiary designations (life insurance, 401k, joint accounts) pass outside the will entirely and are not affected by it.</div></details>
+<details class="faq-item"><summary class="faq-q">How do I change or revoke my will?</summary><div class="faq-a">You can revoke a will by: (1) creating a new will that expressly revokes all prior wills, (2) physically destroying the will (burning, tearing), or (3) executing a "Codicil" — an amendment to your existing will. The safest method is creating a new will that contains the standard revocation clause included in this template.</div></details>
+</div>
+</section>
+
+<!-- STATE PAGES -->
+<section style="margin-top:48px">
+<p class="section-eyebrow">State-Specific</p>
+<h2 class="section-title" style="font-size:22px;margin-bottom:4px">Last Will &amp; Testament by State</h2>
+<p style="font-size:13px;color:var(--ink-3);margin-bottom:20px">State laws on witnesses, notarization, and holographic wills vary significantly. Select your state for specific requirements.</p>
+<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:8px">
+${['Alabama','Alaska','Arizona','Arkansas','California','Colorado','Connecticut','Delaware','Florida','Georgia','Hawaii','Idaho','Illinois','Indiana','Iowa','Kansas','Kentucky','Louisiana','Maine','Maryland','Massachusetts','Michigan','Minnesota','Mississippi','Missouri','Montana','Nebraska','Nevada','New Hampshire','New Jersey','New Mexico','New York','North Carolina','North Dakota','Ohio','Oklahoma','Oregon','Pennsylvania','Rhode Island','South Carolina','South Dakota','Tennessee','Texas','Utah','Vermont','Virginia','Washington','West Virginia','Wisconsin','Wyoming'].map(s=>`<a href="/${s.toLowerCase().replace(/\s+/g,'-')}-last-will-testament-template" style="display:block;padding:8px 12px;border:1px solid var(--border);border-radius:8px;font-size:13px;font-weight:500;color:var(--ink-1);text-decoration:none;transition:border-color .15s,background .15s" onmouseover="this.style.borderColor='var(--accent)';this.style.background='var(--surface-2)'" onmouseout="this.style.borderColor='var(--border)';this.style.background=''">${s}</a>`).join('')}
+</div>
+</section>
+</div>
+</main>
+<footer class="site-footer"><div class="container"><div class="footer-grid"><div><a href="/" class="footer-logo">FreeDocTemplates</a><p class="footer-tagline">Free legal document templates. No sign-up, no watermarks.</p><p class="footer-disclaimer" style="margin-top:8px">Not a law firm. For informational use only. Consult a licensed attorney for estate planning advice.</p></div><div><div class="footer-col-title">Business</div><nav class="footer-nav"><a href="/invoice-template">Invoice</a><a href="/nda-template">NDA</a><a href="/independent-contractor-agreement-template">Contractor Agreement</a></nav></div><div><div class="footer-col-title">Personal</div><nav class="footer-nav"><a href="/last-will-testament-template">Last Will &amp; Testament</a><a href="/power-of-attorney-template">Power of Attorney</a><a href="/lease-agreement-template">Lease Agreement</a></nav></div></div><div class="footer-bottom"><p>© 2026 FreeDocTemplates.xyz</p></div></div></footer>
+<script src="/shared/scripts.js?v=1" defer></script>
+<script>
+var beneCount=0, bequestCount=0, childCount=0;
+function gv(id){return(document.getElementById(id)||{}).value||'';}
+function fld(v,ph){return v?'<span class="doc-field">'+v+'</span>':'<span class="doc-field empty">'+ph+'</span>';}
+
+document.getElementById('wl-marital').addEventListener('change',function(){
+  document.getElementById('wl-spouse-row').style.display=this.value==='married'?'block':'none'; render();
+});
+
+function toggleChildren(){
+  document.getElementById('wl-children-section').style.display=gv('wl-has-children')==='yes'?'block':'none';
+}
+
+function addBene(){
+  beneCount++;
+  var d=document.createElement('div');
+  d.className='form-row'; d.id='bene-'+beneCount;
+  d.innerHTML='<div style="display:grid;grid-template-columns:1fr 1fr 28px;gap:6px;align-items:end">'
+    +'<div><label class="form-label">Name</label><input class="form-input" id="bn-name-'+beneCount+'" placeholder="Jane Smith" oninput="render()"></div>'
+    +'<div><label class="form-label">Share (%)</label><input class="form-input" id="bn-pct-'+beneCount+'" type="number" min="0" max="100" placeholder="50" oninput="render()"></div>'
+    +'<button type="button" onclick="document.getElementById(\'bene-'+beneCount+'\').remove();render()" style="background:none;border:none;color:var(--ink-3);cursor:pointer;font-size:18px;padding:0;margin-bottom:4px">×</button>'
+    +'</div>';
+  document.getElementById('wl-benes').appendChild(d);
+  render();
+}
+
+function addBequest(){
+  bequestCount++;
+  var d=document.createElement('div');
+  d.className='form-row'; d.id='bequest-'+bequestCount;
+  d.innerHTML='<div style="display:grid;grid-template-columns:1fr 1fr 28px;gap:6px;align-items:end">'
+    +'<div><label class="form-label">Item / Property</label><input class="form-input" id="bq-item-'+bequestCount+'" placeholder="1967 Ford Mustang" oninput="render()"></div>'
+    +'<div><label class="form-label">To (Recipient)</label><input class="form-input" id="bq-to-'+bequestCount+'" placeholder="Robert Smith" oninput="render()"></div>'
+    +'<button type="button" onclick="document.getElementById(\'bequest-'+bequestCount+'\').remove();render()" style="background:none;border:none;color:var(--ink-3);cursor:pointer;font-size:18px;padding:0;margin-bottom:4px">×</button>'
+    +'</div>';
+  document.getElementById('wl-bequests').appendChild(d);
+  render();
+}
+
+function addChild(){
+  childCount++;
+  var d=document.createElement('div');
+  d.className='form-row'; d.id='child-'+childCount;
+  d.innerHTML='<div style="display:grid;grid-template-columns:1fr 80px 28px;gap:6px;align-items:end">'
+    +'<div><label class="form-label">Child\'s Full Name</label><input class="form-input" id="ch-name-'+childCount+'" placeholder="Emma Rose Smith" oninput="render()"></div>'
+    +'<div><label class="form-label">Age</label><input class="form-input" id="ch-age-'+childCount+'" type="number" min="0" max="17" placeholder="8" oninput="render()"></div>'
+    +'<button type="button" onclick="document.getElementById(\'child-'+childCount+'\').remove();render()" style="background:none;border:none;color:var(--ink-3);cursor:pointer;font-size:18px;padding:0;margin-bottom:4px">×</button>'
+    +'</div>';
+  document.getElementById('wl-children').appendChild(d);
+  render();
+}
+
+// init one beneficiary
+addBene();
+
+function render(){
+  var name=gv('wl-name'), city=gv('wl-city'), state=gv('wl-state'), dob=gv('wl-dob');
+  var marital=gv('wl-marital'), spouse=gv('wl-spouse');
+  var exec=gv('wl-exec'), execRel=gv('wl-exec-rel'), altExec=gv('wl-alt-exec');
+  var guardian=gv('wl-guardian'), altGuardian=gv('wl-alt-guardian');
+  var dateStr=gv('wl-date')||'__________';
+  var hasChildren=gv('wl-has-children')==='yes';
+
+  // collect beneficiaries
+  var benes=[];
+  document.querySelectorAll('[id^="bn-name-"]').forEach(function(el){
+    var i=el.id.split('-').pop();
+    var n=el.value, p=(document.getElementById('bn-pct-'+i)||{}).value||'';
+    if(n){benes.push({name:n,pct:p});}
+  });
+
+  // collect bequests
+  var bequests=[];
+  document.querySelectorAll('[id^="bq-item-"]').forEach(function(el){
+    var i=el.id.split('-').pop();
+    var item=el.value, to=(document.getElementById('bq-to-'+i)||{}).value||'';
+    if(item||to){bequests.push({item:item,to:to});}
+  });
+
+  // collect children
+  var children=[];
+  document.querySelectorAll('[id^="ch-name-"]').forEach(function(el){
+    var i=el.id.split('-').pop();
+    var n=el.value, age=(document.getElementById('ch-age-'+i)||{}).value||'';
+    if(n){children.push({name:n,age:age});}
+  });
+
+  var out='';
+  out+='<div class="doc-title">LAST WILL AND TESTAMENT</div>';
+  out+='<div class="doc-subtitle">of '+fld(name,'[Your Full Name]')+'</div>';
+  out+='<p class="doc-clause">I, '+fld(name,'[Your Full Name]')+', a resident of '+fld(city,'[City]')+', '
+      +fld(state,'[State]')+', being of sound mind and disposing memory, not acting under duress or undue influence, '
+      +'and fully understanding the nature and extent of all my property and of this disposition thereof, '
+      +'do hereby make, publish, and declare this instrument to be my Last Will and Testament, '
+      +'hereby revoking any and all Wills and Codicils previously made by me.</p>';
+
+  if(marital==='married' && spouse){
+    out+='<p class="doc-clause"><span class="doc-label">ARTICLE I — MARITAL STATUS</span><br>I am married to '+fld(spouse,'[Spouse Name]')+'. All references in this Will to my spouse refer to '+(spouse||'[Spouse Name]')+'.</p>';
+  }
+
+  out+='<p class="doc-clause"><span class="doc-label">ARTICLE II — EXECUTOR</span><br>I hereby appoint '
+      +fld(exec,'[Executor Name]')+(execRel?', my '+execRel:'')
+      +', as Executor of this Will. '
+      +(altExec?'If '+fld(exec,'[Executor]')+' is unable or unwilling to serve, I appoint '+fld(altExec,'[Alternate Executor]')+' as alternate Executor. ':'')
+      +'My Executor shall have full power and authority to carry out all provisions of this Will, '
+      +'to settle my estate, pay my debts and taxes, and distribute my estate as directed herein, '
+      +'without the necessity of obtaining court approval for any action taken in good faith.</p>';
+
+  if(bequests.length>0){
+    out+='<p class="doc-clause"><span class="doc-label">ARTICLE III — SPECIFIC BEQUESTS</span><br>I give, devise, and bequeath the following specific property to the persons named:</p>';
+    out+='<ul class="doc-list">';
+    bequests.forEach(function(b){ out+='<li>'+fld(b.item,'[Item]')+' to '+fld(b.to,'[Recipient]')+'</li>'; });
+    out+='</ul>';
+  }
+
+  var artNum=bequests.length>0?'IV':'III';
+  if(benes.length>0){
+    var totalPct=benes.reduce(function(s,b){return s+(parseFloat(b.pct)||0);},0);
+    out+='<p class="doc-clause"><span class="doc-label">ARTICLE '+artNum+' — RESIDUARY ESTATE</span><br>'
+        +'All the rest, residue, and remainder of my estate (the "Residuary Estate"), including both real and personal property, '
+        +'wherever located, not otherwise specifically disposed of in this Will, I give, devise, and bequeath as follows:</p>';
+    out+='<ul class="doc-list">';
+    benes.forEach(function(b){ out+='<li>'+fld(b.pct,'[%]')+'% to '+fld(b.name,'[Name]'); if(totalPct>0&&totalPct!==100){out+=' <em style="color:#c0392b">(Total: '+totalPct+'% — should equal 100%)</em>';}out+='</li>'; });
+    out+='</ul>';
+    artNum=(parseInt(artNum.replace('IV','4').replace('III','3').replace('II','2').replace('I','1'))+1);
+    artNum=['I','II','III','IV','V','VI','VII'][artNum-1]||artNum;
+  }
+
+  if(hasChildren && children.length>0){
+    out+='<p class="doc-clause"><span class="doc-label">ARTICLE '+artNum+' — GUARDIANSHIP OF MINOR CHILDREN</span><br>'
+        +'I have the following minor children:<br>';
+    children.forEach(function(c){ out+=fld(c.name,'[Child Name]')+(c.age?' (age '+c.age+')':'')+'<br>'; });
+    out+='If I am not survived by my spouse, or if there is no surviving parent, I appoint '
+        +fld(guardian,'[Guardian Name]')+' as Guardian of my minor children\'s person and property. '
+        +(altGuardian?'If '+fld(guardian,'[Guardian]')+' is unable or unwilling to serve, I appoint '+fld(altGuardian,'[Alternate Guardian]')+' as alternate Guardian. ':'')
+        +'</p>';
+  }
+
+  out+='<div class="doc-sig-block">';
+  out+='<p style="margin-bottom:16px">IN WITNESS WHEREOF, I have hereunto subscribed my name this <strong>'+(dateStr==='__________'?'_______ day of _______, 2026':dateStr)+'</strong>, '
+      +'declaring this to be my Last Will and Testament in the presence of the undersigned witnesses, '
+      +'who subscribe their names hereto in my presence and in the presence of each other.</p>';
+  out+='<table class="doc-sig-table"><tbody>'
+      +'<tr><td><div class="doc-sig-line"></div><span class="doc-sig-label">Testator — '+fld(name,'[Your Name]')+'</span></td></tr>'
+      +'</tbody></table>';
+  out+='<p class="doc-label" style="margin-top:24px;margin-bottom:12px">WITNESSES</p>'
+      +'<p style="font-size:10pt;margin-bottom:12px">The testator signed or acknowledged this Will in our presence and we, at the testator\'s request and in the testator\'s presence, and in the presence of each other, subscribe our names as witnesses, declaring that the testator appears to be of sound mind.</p>';
+  out+='<table class="doc-sig-table"><tbody>'
+      +'<tr><td><div class="doc-sig-line"></div><span class="doc-sig-label">Witness 1 Signature</span></td><td><div class="doc-sig-line"></div><span class="doc-sig-label">Witness 1 Printed Name</span></td></tr>'
+      +'<tr><td><div class="doc-sig-line"></div><span class="doc-sig-label">Witness 2 Signature</span></td><td><div class="doc-sig-line"></div><span class="doc-sig-label">Witness 2 Printed Name</span></td></tr>'
+      +'</tbody></table>';
+  out+='<p class="doc-label" style="margin-top:24px;margin-bottom:8px">NOTARY (Recommended — creates self-proving will)</p>';
+  out+='<p style="font-size:10pt">State of '+fld(state,'___________')+', County of _______________<br>'
+      +'Before me, the undersigned, a Notary Public in and for the State of '+fld(state,'___________')+', personally appeared '
+      +fld(name,'[Testator]')+' known to me to be the Testator, and the witnesses whose names are signed to the foregoing instrument, '
+      +'and being first duly sworn, the Testator declared the instrument to be the Testator\'s Last Will and Testament, '
+      +'and that the Testator had willingly signed it as a free and voluntary act.</p>';
+  out+='<table class="doc-sig-table" style="margin-top:12px"><tbody>'
+      +'<tr><td><div class="doc-sig-line"></div><span class="doc-sig-label">Notary Public Signature</span></td><td><div class="doc-sig-line"></div><span class="doc-sig-label">My Commission Expires</span></td></tr>'
+      +'</tbody></table>';
+  out+='</div>';
+  document.getElementById('wl-preview').innerHTML=out;
+}
+render();
+</script>
+</body>
+</html>`;
+
+fs.writeFileSync(base+'last-will-testament-template.html',html);
+console.log('will ok',html.length);

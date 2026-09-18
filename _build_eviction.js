@@ -1,0 +1,209 @@
+const fs = require('fs');
+const base = 'C:/Users/mastr/claude co/legal-docs/';
+
+const html = `<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free Eviction Notice Template 2026 | Pay or Quit, Cure or Quit | Fill &amp; Download</title>
+<meta name="description" content="Free eviction notice template 2026. 3-day, 5-day, 30-day, pay or quit, cure or quit, unconditional quit. Fill in, preview live, download PDF. All 50 states.">
+<link rel="canonical" href="https://www.freedoctemplates.xyz/eviction-notice-template">
+<meta property="og:title" content="Free Eviction Notice Template 2026">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap">
+<link rel="stylesheet" href="/shared/styles.css?v=1">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Free Eviction Notice Template","description":"Free eviction notice generator — 3-day, 5-day, 30-day pay or quit, cure or quit, unconditional quit notices for all 50 states.","url":"https://www.freedoctemplates.xyz/eviction-notice-template","applicationCategory":"LegalService","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script>
+</head>
+<body>
+<header class="site-header"><div class="header-inner"><a href="/" class="site-logo">FreeDoc<span>Templates</span></a><nav class="main-nav" aria-label="Main"><div class="nav-group"><button class="nav-trigger" aria-haspopup="true" aria-expanded="false">Business <svg class="nav-chevron" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4l4 4 4-4"/></svg></button><div class="nav-dropdown"><a href="/invoice-template" class="nav-item">Invoice Template</a><a href="/nda-template" class="nav-item">NDA Template</a><a href="/independent-contractor-agreement-template" class="nav-item">Contractor Agreement</a></div></div><div class="nav-group"><button class="nav-trigger" aria-haspopup="true" aria-expanded="false">Property <svg class="nav-chevron" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4l4 4 4-4"/></svg></button><div class="nav-dropdown"><a href="/lease-agreement-template" class="nav-item">Lease Agreement</a><a href="/eviction-notice-template" class="nav-item">Eviction Notice</a><a href="/notice-to-vacate-template" class="nav-item">Notice to Vacate</a></div></div></nav><div class="header-actions"><a href="/tools" class="btn-all-tools">All Templates</a></div></div></header>
+<main class="page-wrap">
+<div class="container">
+<nav class="breadcrumb"><a href="/">Home</a><span>›</span><a href="/tools">Templates</a><span>›</span><span aria-current="page">Eviction Notice</span></nav>
+<h1 class="page-title" data-enter>Free Eviction Notice Template</h1>
+<p class="page-sub" data-enter data-delay="1">Pay or Quit, Cure or Quit, Unconditional Quit — all notice types for all 50 states. Fill in, preview, download PDF.</p>
+<div class="page-badges" data-enter data-delay="2"><span class="page-badge">✓ Free, no account</span><span class="page-badge">✓ All notice types</span><span class="page-badge">✓ All 50 states</span><span class="page-badge">✓ PDF download</span></div>
+</div>
+<div class="container doc-layout">
+<!-- FORM -->
+<div class="doc-form-panel">
+  <div class="form-section">
+    <div class="form-section-title">Notice Type</div>
+    <div class="form-row"><label class="form-label">Type of Eviction Notice</label>
+      <select class="form-input" id="ev-type" onchange="render()">
+        <option value="pay-quit">Pay Rent or Quit</option>
+        <option value="cure-quit">Cure Violation or Quit</option>
+        <option value="unconditional">Unconditional Quit Notice</option>
+        <option value="terminate">Notice of Non-Renewal / Termination</option>
+      </select>
+    </div>
+    <div class="form-row"><label class="form-label">Notice Period (Days)</label>
+      <select class="form-input" id="ev-days" onchange="render()">
+        <option value="3">3 Days</option>
+        <option value="5">5 Days</option>
+        <option value="7">7 Days</option>
+        <option value="10">10 Days</option>
+        <option value="14">14 Days</option>
+        <option value="30" selected>30 Days</option>
+        <option value="60">60 Days</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-section">
+    <div class="form-section-title">Landlord</div>
+    <div class="form-row"><label class="form-label">Landlord / Property Owner Name</label><input class="form-input" id="ev-landlord" placeholder="Sunrise Properties LLC" oninput="render()"></div>
+    <div class="form-row"><label class="form-label">Landlord Mailing Address</label><input class="form-input" id="ev-landlord-addr" placeholder="100 Main St, Austin, TX 78701" oninput="render()"></div>
+  </div>
+  <div class="form-section">
+    <div class="form-section-title">Tenant(s)</div>
+    <div class="form-row"><label class="form-label">Tenant Name(s)</label><input class="form-input" id="ev-tenant" placeholder="John Smith and Jane Smith" oninput="render()"></div>
+    <div class="form-row"><label class="form-label">Rental Property Address</label><input class="form-input" id="ev-property" placeholder="456 Oak Ave, Unit 2B, Austin, TX 78702" oninput="render()"></div>
+  </div>
+  <div class="form-section" id="ev-rent-section">
+    <div class="form-section-title">Rent Due <span id="ev-section-label">(Pay or Quit)</span></div>
+    <div class="form-row" id="ev-amount-row"><label class="form-label">Amount of Unpaid Rent</label><input class="form-input" id="ev-amount" placeholder="1,850.00" oninput="render()"></div>
+    <div class="form-row" id="ev-period-row"><label class="form-label">Rent Period (e.g., "September 2026")</label><input class="form-input" id="ev-period" placeholder="September 2026" oninput="render()"></div>
+    <div class="form-row" id="ev-violation-row" style="display:none"><label class="form-label">Description of Lease Violation</label><textarea class="form-input" id="ev-violation" rows="3" placeholder="Tenant has maintained unauthorized pets on the premises in violation of Section 12 of the Lease Agreement." oninput="render()"></textarea></div>
+    <div class="form-row" id="ev-reason-row" style="display:none"><label class="form-label">Reason for Termination</label><textarea class="form-input" id="ev-reason" rows="3" placeholder="The lease agreement dated January 1, 2026 will expire on December 31, 2026 and will not be renewed." oninput="render()"></textarea></div>
+  </div>
+  <div class="form-section">
+    <div class="form-section-title">Date &amp; State</div>
+    <div class="form-row two-col"><div><label class="form-label">Date of Notice</label><input class="form-input" id="ev-date" type="date" oninput="render()"></div><div><label class="form-label">State</label><select class="form-input" id="ev-state" onchange="render()"><option value="">— Select —</option><option>Alabama</option><option>Alaska</option><option>Arizona</option><option>Arkansas</option><option>California</option><option>Colorado</option><option>Connecticut</option><option>Delaware</option><option>Florida</option><option>Georgia</option><option>Hawaii</option><option>Idaho</option><option>Illinois</option><option>Indiana</option><option>Iowa</option><option>Kansas</option><option>Kentucky</option><option>Louisiana</option><option>Maine</option><option>Maryland</option><option>Massachusetts</option><option>Michigan</option><option>Minnesota</option><option>Mississippi</option><option>Missouri</option><option>Montana</option><option>Nebraska</option><option>Nevada</option><option>New Hampshire</option><option>New Jersey</option><option>New Mexico</option><option>New York</option><option>North Carolina</option><option>North Dakota</option><option>Ohio</option><option>Oklahoma</option><option>Oregon</option><option>Pennsylvania</option><option>Rhode Island</option><option>South Carolina</option><option>South Dakota</option><option>Tennessee</option><option>Texas</option><option>Utah</option><option>Vermont</option><option>Virginia</option><option>Washington</option><option>West Virginia</option><option>Wisconsin</option><option>Wyoming</option></select></div></div>
+  </div>
+  <div class="form-section">
+    <button class="doc-btn doc-btn--gold" type="button" onclick="window.print()" style="width:100%"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 01-2-2v-5a2 2 0 012-2h16a2 2 0 012 2v5a2 2 0 01-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg> Download / Print PDF</button>
+    <p style="font-size:11px;color:var(--ink-3);text-align:center;margin-top:6px">Use "Save as PDF" in your browser's print dialog</p>
+  </div>
+</div>
+<!-- PREVIEW -->
+<div class="doc-preview-panel">
+  <div class="doc-preview-header"><span>Live Preview</span><span style="font-size:11px;color:var(--ink-3)">Updates as you type</span></div>
+  <div class="legal-document" id="ev-preview">
+    <div class="doc-title">EVICTION NOTICE</div>
+    <div class="doc-subtitle">Fill in the form to see your notice</div>
+  </div>
+</div>
+</div>
+
+<!-- FAQ -->
+<div class="container" style="margin-top:56px">
+<section class="faq-section" style="margin:0 -24px;padding:48px 24px">
+<div class="faq-header"><p class="section-eyebrow">FAQ</p><h2 class="section-title" style="font-size:24px">Eviction notice questions</h2></div>
+<div class="faq-list">
+<details class="faq-item"><summary class="faq-q">What is the difference between Pay or Quit vs. Cure or Quit?</summary><div class="faq-a">A <strong>Pay or Quit</strong> notice is used when the tenant owes unpaid rent — they must pay the full amount or vacate within the notice period. A <strong>Cure or Quit</strong> notice is used for lease violations other than non-payment (pets, excessive noise, unauthorized occupants) — the tenant must fix ("cure") the violation or vacate. An <strong>Unconditional Quit</strong> notice gives the tenant no option to fix anything — they must vacate unconditionally. This type is reserved for serious or repeat violations and is restricted by many state laws.</div></details>
+<details class="faq-item"><summary class="faq-q">How many days notice is required to evict a tenant?</summary><div class="faq-a">It depends on the reason and state. For non-payment of rent: California requires 3 days, Texas 3 days, Florida 3 days, New York 14 days. For lease violations: most states require 3–10 days. For month-to-month termination with no fault: most states require 30 days (California requires 60 days for tenants over 1 year). Always check your state's specific requirements before issuing notice.</div></details>
+<details class="faq-item"><summary class="faq-q">How do I properly serve an eviction notice?</summary><div class="faq-a">Most states accept service by: (1) personal delivery to the tenant, (2) leaving with a person of suitable age at the premises, or (3) posting on the main door and mailing a copy. Keep a signed certificate of service or send via certified mail with return receipt. The notice period typically begins the day after service, not the day of service.</div></details>
+<details class="faq-item"><summary class="faq-q">Can I evict a tenant without going to court?</summary><div class="faq-a">No. If the tenant does not comply with the notice and vacate voluntarily, you must file for eviction (unlawful detainer) with your local court. You cannot change locks, remove belongings, or shut off utilities to force a tenant out — this is "self-help eviction" and is illegal in every US state, exposing the landlord to significant liability.</div></details>
+</div>
+</section>
+
+<section style="margin-top:48px">
+<p class="section-eyebrow">State-Specific</p>
+<h2 class="section-title" style="font-size:22px;margin-bottom:4px">Eviction Notice by State</h2>
+<p style="font-size:13px;color:var(--ink-3);margin-bottom:20px">Notice periods and procedural requirements vary significantly by state. Select your state for specific rules.</p>
+<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:8px">
+${['Alabama','Alaska','Arizona','Arkansas','California','Colorado','Connecticut','Delaware','Florida','Georgia','Hawaii','Idaho','Illinois','Indiana','Iowa','Kansas','Kentucky','Louisiana','Maine','Maryland','Massachusetts','Michigan','Minnesota','Mississippi','Missouri','Montana','Nebraska','Nevada','New Hampshire','New Jersey','New Mexico','New York','North Carolina','North Dakota','Ohio','Oklahoma','Oregon','Pennsylvania','Rhode Island','South Carolina','South Dakota','Tennessee','Texas','Utah','Vermont','Virginia','Washington','West Virginia','Wisconsin','Wyoming'].map(s=>`<a href="/${s.toLowerCase().replace(/\s+/g,'-')}-eviction-notice-template" style="display:block;padding:8px 12px;border:1px solid var(--border);border-radius:8px;font-size:13px;font-weight:500;color:var(--ink-1);text-decoration:none;transition:border-color .15s,background .15s" onmouseover="this.style.borderColor='var(--accent)';this.style.background='var(--surface-2)'" onmouseout="this.style.borderColor='var(--border)';this.style.background=''">${s}</a>`).join('')}
+</div>
+</section>
+
+<section class="related-section">
+<p class="section-eyebrow">Related Templates</p>
+<h2 class="section-title" style="font-size:22px;margin-bottom:16px">You might also need</h2>
+<div class="tools-grid" style="grid-template-columns:repeat(auto-fill,minmax(260px,1fr))">
+<a href="/lease-agreement-template" class="tool-card"><div class="tc-icon tc-blue"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div><div><div class="tool-card-title">Lease Agreement</div><div class="tool-card-desc">Residential rental agreement for all states.</div></div></a>
+<a href="/notice-to-vacate-template" class="tool-card"><div class="tc-icon tc-gold"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div><div><div class="tool-card-title">Notice to Vacate</div><div class="tool-card-desc">Tenant or landlord notice to end tenancy.</div></div></a>
+<a href="/demand-letter-template" class="tool-card"><div class="tc-icon tc-green"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></div><div><div class="tool-card-title">Demand Letter</div><div class="tool-card-desc">Formal demand for payment or action.</div></div></a>
+</div>
+</section>
+</div>
+</main>
+<footer class="site-footer"><div class="container"><div class="footer-grid"><div><a href="/" class="footer-logo">FreeDocTemplates</a><p class="footer-tagline">Free legal document templates. No sign-up, no watermarks.</p><p class="footer-disclaimer" style="margin-top:8px">Not a law firm. For informational use only. Always verify state-specific eviction requirements.</p></div><div><div class="footer-col-title">Property</div><nav class="footer-nav"><a href="/lease-agreement-template">Lease Agreement</a><a href="/eviction-notice-template">Eviction Notice</a><a href="/notice-to-vacate-template">Notice to Vacate</a></nav></div><div><div class="footer-col-title">Business</div><nav class="footer-nav"><a href="/invoice-template">Invoice</a><a href="/nda-template">NDA</a><a href="/demand-letter-template">Demand Letter</a></nav></div></div><div class="footer-bottom"><p>© 2026 FreeDocTemplates.xyz</p></div></div></footer>
+<script src="/shared/scripts.js?v=1" defer></script>
+<script>
+function gv(id){return(document.getElementById(id)||{}).value||'';}
+function fld(v,ph){return v?'<span class="doc-field">'+v+'</span>':'<span class="doc-field empty">'+ph+'</span>';}
+
+document.getElementById('ev-type').addEventListener('change',function(){
+  var t=this.value;
+  document.getElementById('ev-amount-row').style.display=(t==='pay-quit')?'block':'none';
+  document.getElementById('ev-period-row').style.display=(t==='pay-quit')?'block':'none';
+  document.getElementById('ev-violation-row').style.display=(t==='cure-quit'||t==='unconditional')?'block':'none';
+  document.getElementById('ev-reason-row').style.display=(t==='terminate')?'block':'none';
+  var labels={'pay-quit':'(Pay or Quit)','cure-quit':'(Cure or Quit)','unconditional':'(Unconditional Quit)','terminate':'(Non-Renewal)'};
+  document.getElementById('ev-section-label').textContent=labels[t]||'';
+  render();
+});
+
+function render(){
+  var type=gv('ev-type'), days=gv('ev-days');
+  var landlord=gv('ev-landlord'), landlordAddr=gv('ev-landlord-addr');
+  var tenant=gv('ev-tenant'), property=gv('ev-property');
+  var amount=gv('ev-amount'), period=gv('ev-period');
+  var violation=gv('ev-violation'), reason=gv('ev-reason');
+  var dateStr=gv('ev-date'), state=gv('ev-state');
+
+  var typeTitles={'pay-quit':'NOTICE TO PAY RENT OR QUIT','cure-quit':'NOTICE TO CURE OR QUIT','unconditional':'UNCONDITIONAL QUIT NOTICE','terminate':'NOTICE OF LEASE NON-RENEWAL'};
+  var title=typeTitles[type]||'EVICTION NOTICE';
+
+  var out='';
+  out+='<div class="doc-title">'+title+'</div>';
+  out+='<p style="text-align:right;font-size:10pt;margin-bottom:16px"><strong>Date:</strong> '+fld(dateStr,'[Date]')+'</p>';
+  out+='<p class="doc-clause"><strong>TO:</strong> '+fld(tenant,'[Tenant Name(s)]')+'<br><strong>PROPERTY ADDRESS:</strong> '+fld(property,'[Property Address]')+'</p>';
+  out+='<p class="doc-clause"><strong>FROM:</strong> '+fld(landlord,'[Landlord Name]')+' ("Landlord")'+(landlordAddr?'<br>'+landlordAddr:'')+'</p>';
+
+  if(type==='pay-quit'){
+    out+='<p class="doc-clause">PLEASE TAKE NOTICE that you are in default of your rental obligation. '
+        +'As of the date of this notice, the total amount of rent past due is: '
+        +'<strong>$'+fld(amount,'[Amount]')+'</strong>'+(period?' for the rental period of '+period:'')+'.</p>';
+    out+='<p class="doc-clause">You are hereby required to, within <strong>'+days+' days</strong> after service of this notice upon you, '
+        +'EITHER pay the full amount of past-due rent OR vacate and surrender possession of the above-described premises.</p>';
+    out+='<p class="doc-clause">If you fail to pay the rent or vacate the premises within the time period stated above, '
+        +'legal proceedings will be initiated against you to recover possession of the premises, '
+        +'unpaid rent, damages, attorney\'s fees, and costs of suit as allowed by law.</p>';
+  } else if(type==='cure-quit'){
+    out+='<p class="doc-clause">PLEASE TAKE NOTICE that you are in violation of your lease agreement '
+        +'for the above-referenced property. The specific violation(s) are as follows:</p>';
+    out+='<p class="doc-clause" style="padding-left:20px;border-left:3px solid var(--accent)">'+fld(violation,'[Describe the lease violation]')+'</p>';
+    out+='<p class="doc-clause">You are hereby required to, within <strong>'+days+' days</strong> after service of this notice, '
+        +'EITHER cure the violation described above OR vacate and surrender possession of the premises.</p>';
+    out+='<p class="doc-clause">Failure to cure the violation or vacate the premises within the stated period will result in '
+        +'legal eviction proceedings.</p>';
+  } else if(type==='unconditional'){
+    out+='<p class="doc-clause">PLEASE TAKE NOTICE that you are required to vacate and surrender '
+        +'possession of the above-described premises within <strong>'+days+' days</strong> of service of this notice.</p>';
+    out+='<p class="doc-clause">The basis for this notice is:</p>';
+    out+='<p class="doc-clause" style="padding-left:20px;border-left:3px solid var(--accent)">'+fld(violation,'[Describe reason for unconditional quit]')+'</p>';
+    out+='<p class="doc-clause">You are NOT being offered an opportunity to cure. '
+        +'If you fail to vacate within the stated period, legal eviction proceedings will be initiated against you.</p>';
+  } else {
+    out+='<p class="doc-clause">PLEASE TAKE NOTICE that your tenancy at the above-described premises is hereby terminated. '
+        +'You are required to vacate and deliver possession of the premises within <strong>'+days+' days</strong> from the date of this notice.</p>';
+    out+='<p class="doc-clause">'+fld(reason,'[Describe the reason for non-renewal or termination]')+'</p>';
+    out+='<p class="doc-clause">Please make arrangements to remove all personal belongings and return all keys to the landlord on or before the vacate date.</p>';
+  }
+
+  out+='<div class="doc-sig-block">';
+  out+='<table class="doc-sig-table"><tbody>'
+      +'<tr><td><div class="doc-sig-line"></div><span class="doc-sig-label">Landlord Signature</span></td><td><div class="doc-sig-line"></div><span class="doc-sig-label">Date</span></td></tr>'
+      +'<tr><td><div class="doc-sig-line"></div><span class="doc-sig-label">Printed Name — '+fld(landlord,'[Landlord Name]')+'</span></td></tr>'
+      +'</tbody></table>';
+  out+='<p class="doc-label" style="margin-top:20px">CERTIFICATE OF SERVICE</p>';
+  out+='<p style="font-size:10pt">I, the undersigned, certify that I served a copy of this notice on '
+      +fld(tenant,'[Tenant]')+' at '+fld(property,'[Property Address]')+' on ____________ by:<br><br>'
+      +'<span style="margin-right:20px">☐ Personal delivery to tenant</span>'
+      +'<span style="margin-right:20px">☐ Left with household member (age 18+)</span>'
+      +'<span>☐ Posted on door + mailed (if unable to deliver)</span></p>';
+  out+='<table class="doc-sig-table" style="margin-top:10px"><tbody>'
+      +'<tr><td><div class="doc-sig-line"></div><span class="doc-sig-label">Server\'s Signature</span></td><td><div class="doc-sig-line"></div><span class="doc-sig-label">Date Served</span></td></tr>'
+      +'</tbody></table>';
+  out+='</div>';
+  document.getElementById('ev-preview').innerHTML=out;
+}
+render();
+</script>
+</body>
+</html>`;
+
+fs.writeFileSync(base+'eviction-notice-template.html',html);
+console.log('eviction ok',html.length);

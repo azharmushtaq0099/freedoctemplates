@@ -3,21 +3,29 @@
   'use strict';
 
   var TOOLS = [
-    { name:'Bill of Sale Template', desc:'Vehicle, general merchandise, or trailer', url:'/bill-of-sale-template', icon:'doc' },
+    { name:'Lease Agreement Template', desc:'Residential lease for all 50 states', url:'/lease-agreement-template', icon:'doc' },
+    { name:'Bill of Sale Template', desc:'Vehicle, boat, general merchandise', url:'/bill-of-sale-template', icon:'doc' },
     { name:'Power of Attorney Form', desc:'General, durable, limited, or medical', url:'/power-of-attorney-template', icon:'doc' },
+    { name:'Last Will and Testament', desc:'Designate executor, heirs, and guardians', url:'/last-will-testament-template', icon:'doc' },
+    { name:'Eviction Notice', desc:'Pay or quit, cure or quit, 3–60 days', url:'/eviction-notice-template', icon:'doc' },
+    { name:'Quitclaim Deed', desc:'Transfer property between family or to LLC', url:'/quitclaim-deed-template', icon:'doc' },
+    { name:'Divorce Settlement Agreement', desc:'Property, custody, and support for uncontested divorce', url:'/divorce-settlement-agreement-template', icon:'doc' },
+    { name:'Personal Loan Agreement', desc:'Document a loan between individuals', url:'/personal-loan-agreement-template', icon:'doc' },
+    { name:'Non-Compete Agreement', desc:'Restrict employees from competing', url:'/non-compete-agreement-template', icon:'doc' },
+    { name:'Demand Letter', desc:'Formal demand for payment or action', url:'/demand-letter-template', icon:'doc' },
+    { name:'Roommate Agreement', desc:'Rent split, utilities, and house rules', url:'/roommate-agreement-template', icon:'doc' },
+    { name:'Affidavit Template', desc:'Sworn statement of facts with notary block', url:'/affidavit-template', icon:'doc' },
+    { name:'Notice to Vacate', desc:'Tenant or landlord 30/60-day notice', url:'/notice-to-vacate-template', icon:'doc' },
+    { name:'Commercial Lease Agreement', desc:'Office, retail, and NNN leases', url:'/commercial-lease-agreement-template', icon:'doc' },
+    { name:'Partnership Agreement', desc:'Business partnership terms and ownership', url:'/partnership-agreement-template', icon:'doc' },
     { name:'Invoice Template', desc:'Professional invoice with line items and tax', url:'/invoice-template', icon:'doc' },
     { name:'LLC Operating Agreement', desc:'Single or multi-member LLC agreement', url:'/llc-operating-agreement-template', icon:'doc' },
+    { name:'Single-Member LLC Agreement', desc:'Solo-owner LLC with tax classification', url:'/single-member-llc-operating-agreement-template', icon:'doc' },
     { name:'Independent Contractor Agreement', desc:'Freelance/contractor service agreement', url:'/independent-contractor-agreement-template', icon:'doc' },
     { name:'NDA Template', desc:'Mutual or one-way non-disclosure agreement', url:'/nda-template', icon:'doc' },
-    { name:'Lease Agreement Template', desc:'Residential or commercial lease', url:'/lease-agreement-template', icon:'doc' },
     { name:'Employment Contract Template', desc:'Full-time or part-time employment agreement', url:'/employment-contract-template', icon:'doc' },
-    { name:'Bill of Sale for Car', desc:'Vehicle-specific bill of sale with VIN', url:'/car-bill-of-sale-template', icon:'doc' },
     { name:'Promissory Note Template', desc:'Loan repayment agreement between parties', url:'/promissory-note-template', icon:'doc' },
     { name:'Cease and Desist Letter', desc:'Formal demand to stop harmful activity', url:'/cease-and-desist-letter-template', icon:'doc' },
-    { name:'Partnership Agreement', desc:'Business partnership terms and structure', url:'/partnership-agreement-template', icon:'doc' },
-    { name:'Rental Agreement Template', desc:'Month-to-month or fixed-term rental', url:'/rental-agreement-template', icon:'doc' },
-    { name:'Privacy Policy Generator', desc:'GDPR/CCPA-compliant privacy policy', url:'/privacy-policy-generator', icon:'doc' },
-    { name:'Terms of Service Generator', desc:'Website terms and conditions', url:'/terms-of-service-generator', icon:'doc' },
   ];
 
   function iconSVG() {

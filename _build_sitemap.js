@@ -4,17 +4,26 @@ const base = 'C:/Users/mastr/claude co/legal-docs/';
 const domain = 'https://www.freedoctemplates.xyz';
 const today = new Date().toISOString().split('T')[0];
 
-// collect all html files
-var files = fs.readdirSync(base).filter(f => f.endsWith('.html') && !f.startsWith('_'));
+// collect all html files (root + blog/ subfolder)
+var rootFiles = fs.readdirSync(base).filter(f => f.endsWith('.html') && !f.startsWith('_'));
+var blogFiles = [];
+var blogDir = base + 'blog/';
+if (fs.existsSync(blogDir)) {
+  blogFiles = fs.readdirSync(blogDir).filter(f => f.endsWith('.html') && !f.startsWith('_'));
+}
 
-var urls = files.map(function(f) {
+var urls = rootFiles.map(function(f) {
   var slug = f.replace('.html','');
   var loc = slug === 'index' ? domain + '/' : domain + '/' + slug;
   var priority = slug === 'index' ? '1.0' :
     ['lease-agreement-template','bill-of-sale-template','power-of-attorney-template','nda-template','invoice-template','llc-operating-agreement-template'].includes(slug) ? '0.9' :
     slug.includes('-') && (slug.endsWith('-lease-agreement-template') || slug.endsWith('-bill-of-sale-template') || slug.endsWith('-power-of-attorney-template')) ? '0.7' : '0.8';
   return '  <url>\n    <loc>'+loc+'</loc>\n    <lastmod>'+today+'</lastmod>\n    <changefreq>monthly</changefreq>\n    <priority>'+priority+'</priority>\n  </url>';
-});
+}).concat(blogFiles.map(function(f) {
+  var slug = f.replace('.html','');
+  var loc = domain + '/blog/' + slug;
+  return '  <url>\n    <loc>'+loc+'</loc>\n    <lastmod>'+today+'</lastmod>\n    <changefreq>monthly</changefreq>\n    <priority>0.7</priority>\n  </url>';
+}));
 
 var xml = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+urls.join('\n')+'\n</urlset>';
 fs.writeFileSync(base + 'sitemap.xml', xml);

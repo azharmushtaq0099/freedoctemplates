@@ -1,0 +1,457 @@
+const fs = require('fs');
+const p = 'C:/Users/mastr/claude co/legal-docs/lease-agreement-template.html';
+
+const html = `<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free Lease Agreement Template 2026 | Residential Rental | Fill &amp; Download PDF</title>
+<meta name="description" content="Free residential lease agreement template 2026. Month-to-month and fixed-term. Covers rent, security deposit, pets, utilities, and late fees. Fill in, preview live, download PDF. All 50 states.">
+<link rel="canonical" href="https://www.freedoctemplates.xyz/lease-agreement-template">
+<meta property="og:title" content="Free Lease Agreement Template 2026 — Residential Rental | Fill &amp; Download PDF">
+<meta property="og:type" content="website">
+<meta name="robots" content="index,follow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap">
+<link rel="stylesheet" href="/shared/styles.css?v=1">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Free Lease Agreement Template 2026","url":"https://www.freedoctemplates.xyz/lease-agreement-template","description":"Create a residential lease agreement online. Month-to-month and fixed-term rental agreements for all 50 states. Fill in, preview, download as PDF. No sign-up required.","applicationCategory":"LegalApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What must a lease agreement include to be legally valid?","acceptedAnswer":{"@type":"Answer","text":"A valid residential lease must include: names of landlord and all tenants, property address, lease term (start and end dates or month-to-month), monthly rent amount and due date, security deposit amount, and signatures of all parties. Additional clauses covering utilities, pets, maintenance, and entry notice are strongly recommended but not always legally required."}},{"@type":"Question","name":"What is the maximum security deposit a landlord can charge?","acceptedAnswer":{"@type":"Answer","text":"Security deposit limits vary by state. Common limits: California = 2 months rent (unfurnished), New York = 1 month rent, Texas = no statutory limit, Florida = no statutory limit but must be returned within 15-60 days. Always verify current limits for your specific state before collecting a deposit."}},{"@type":"Question","name":"What is the difference between a lease and a rental agreement?","acceptedAnswer":{"@type":"Answer","text":"A lease (fixed-term) locks in terms for a set period, typically 12 months. Neither party can change the rent or terms during the lease. A rental agreement (month-to-month) automatically renews each month and either party can typically end it with 30 days notice. Landlords often prefer leases for stability; tenants who want flexibility prefer month-to-month."}},{"@type":"Question","name":"How much notice must a landlord give before entering a rental property?","acceptedAnswer":{"@type":"Answer","text":"Most states require 24-48 hours advance notice before a landlord enters a rental unit for non-emergency purposes. California, New York, and Florida require at least 24 hours. Some states require 48 hours. Emergency entries (fire, flood, gas leak) are exempt from notice requirements."}},{"@type":"Question","name":"Can a landlord evict a tenant before the lease ends?","acceptedAnswer":{"@type":"Answer","text":"A landlord can only evict a tenant before the lease ends for cause: non-payment of rent, material lease violations, illegal activity on the premises, or significant property damage. The landlord must follow the state-specific eviction process, which typically includes a written notice period before filing for eviction in court. Self-help evictions (changing locks, removing belongings) are illegal in all states."}}]}
+</script>
+</head>
+<body>
+<div class="cmd-overlay" id="cmd-overlay" role="dialog" aria-modal="true" aria-label="Search templates">
+  <div class="cmd-modal">
+    <div class="cmd-search-row">
+      <span class="cmd-search-icon"><svg width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="9" r="6"/><path d="M15 15l3 3"/></svg></span>
+      <input class="cmd-input" id="cmd-input" type="text" placeholder="Search 15+ templates..." autocomplete="off" spellcheck="false">
+      <kbd class="cmd-kbd-esc" onclick="closeCmd()">esc</kbd>
+    </div>
+    <div class="cmd-body" id="cmd-body"></div>
+    <div class="cmd-footer"><span class="cmd-hint"><kbd class="cmd-key">&uarr;&darr;</kbd> navigate</span><span class="cmd-hint"><kbd class="cmd-key">&#x21b5;</kbd> open</span><span class="cmd-hint"><kbd class="cmd-key">esc</kbd> close</span></div>
+  </div>
+</div>
+<header class="site-header">
+  <div class="header-inner">
+    <a href="/" class="site-logo">FreeDoc<span>Templates</span></a>
+    <nav class="main-nav" aria-label="Main">
+      <div class="nav-group">
+        <button class="nav-trigger" aria-haspopup="true" aria-expanded="false">Business <svg class="nav-chevron" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4l4 4 4-4"/></svg></button>
+        <div class="nav-dropdown"><a href="/invoice-template" class="nav-item">Invoice Template</a><a href="/independent-contractor-agreement-template" class="nav-item">Contractor Agreement</a><a href="/nda-template" class="nav-item">NDA Template</a><a href="/employment-contract-template" class="nav-item">Employment Contract</a></div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-trigger" aria-haspopup="true" aria-expanded="false">Property <svg class="nav-chevron" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4l4 4 4-4"/></svg></button>
+        <div class="nav-dropdown"><a href="/lease-agreement-template" class="nav-item nav-item--active">Lease Agreement</a><a href="/bill-of-sale-template" class="nav-item">Bill of Sale</a><a href="/promissory-note-template" class="nav-item">Promissory Note</a></div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-trigger" aria-haspopup="true" aria-expanded="false">Personal <svg class="nav-chevron" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4l4 4 4-4"/></svg></button>
+        <div class="nav-dropdown"><a href="/power-of-attorney-template" class="nav-item">Power of Attorney</a><a href="/llc-operating-agreement-template" class="nav-item">LLC Agreement</a></div>
+      </div>
+    </nav>
+    <div class="header-actions">
+      <button class="btn-search" id="btn-search" aria-label="Search"><svg width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="9" r="6"/><path d="M15 15l3 3"/></svg></button>
+      <a href="/tools" class="btn-all-tools">All Templates</a>
+    </div>
+  </div>
+</header>
+
+<main class="page-wrap">
+  <div class="container">
+    <nav class="breadcrumb"><a href="/">Home</a><span>&#x203A;</span><span aria-current="page">Lease Agreement Template</span></nav>
+    <h1 class="page-title" data-enter>Free Lease Agreement <span style="color:var(--ink-3);font-weight:400;font-size:.65em">2026</span></h1>
+    <p class="page-sub" data-enter data-delay="1">Residential lease for landlords and tenants. Fixed-term and month-to-month. Covers rent, security deposit, pets, utilities, maintenance, and late fees. All 50 states.</p>
+    <div class="page-badges" data-enter data-delay="2">
+      <span class="page-badge"><svg width="11" height="11" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Free, no account</span>
+      <span class="page-badge"><svg width="11" height="11" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Fixed-term &amp; month-to-month</span>
+      <span class="page-badge"><svg width="11" height="11" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> All 50 states</span>
+      <span class="page-badge"><svg width="11" height="11" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> PDF download</span>
+    </div>
+
+    <div class="doc-layout">
+      <!-- FORM PANEL -->
+      <div class="doc-form-panel" data-enter data-delay="1">
+
+        <div class="doc-card">
+          <div class="doc-card-header">Lease Type &amp; State</div>
+          <div class="doc-card-body">
+            <div class="form-group">
+              <label class="form-label">Lease Type</label>
+              <select id="la-type" class="form-select">
+                <option value="fixed">Fixed-Term Lease (set end date)</option>
+                <option value="monthly">Month-to-Month Rental Agreement</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label">State</label>
+              <select id="la-state" class="form-select">
+                <option value="">Select state...</option>
+                <option>Alabama</option><option>Alaska</option><option>Arizona</option><option>Arkansas</option>
+                <option>California</option><option>Colorado</option><option>Connecticut</option><option>Delaware</option>
+                <option>Florida</option><option>Georgia</option><option>Hawaii</option><option>Idaho</option>
+                <option>Illinois</option><option>Indiana</option><option>Iowa</option><option>Kansas</option>
+                <option>Kentucky</option><option>Louisiana</option><option>Maine</option><option>Maryland</option>
+                <option>Massachusetts</option><option>Michigan</option><option>Minnesota</option><option>Mississippi</option>
+                <option>Missouri</option><option>Montana</option><option>Nebraska</option><option>Nevada</option>
+                <option>New Hampshire</option><option>New Jersey</option><option>New Mexico</option><option>New York</option>
+                <option>North Carolina</option><option>North Dakota</option><option>Ohio</option><option>Oklahoma</option>
+                <option>Oregon</option><option>Pennsylvania</option><option>Rhode Island</option><option>South Carolina</option>
+                <option>South Dakota</option><option>Tennessee</option><option>Texas</option><option>Utah</option>
+                <option>Vermont</option><option>Virginia</option><option>Washington</option><option>West Virginia</option>
+                <option>Wisconsin</option><option>Wyoming</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="doc-card" style="margin-top:12px">
+          <div class="doc-card-header">Property</div>
+          <div class="doc-card-body">
+            <div class="form-group"><label class="form-label">Property Address</label><input type="text" id="la-prop-addr" class="form-input" placeholder="1234 Maple St, Austin, TX 78701"></div>
+            <div class="form-group"><label class="form-label">Unit / Apt (if applicable)</label><input type="text" id="la-unit" class="form-input" placeholder="Unit 4B"></div>
+            <div class="form-group">
+              <label class="form-label">Property Type</label>
+              <select id="la-prop-type" class="form-select">
+                <option value="house">Single-family house</option>
+                <option value="apartment">Apartment / condo unit</option>
+                <option value="townhouse">Townhouse</option>
+                <option value="duplex">Duplex unit</option>
+                <option value="room">Room in a shared property</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="doc-card" style="margin-top:12px">
+          <div class="doc-card-header">Landlord</div>
+          <div class="doc-card-body">
+            <div class="form-group"><label class="form-label">Full Name / Company</label><input type="text" id="la-landlord" class="form-input" placeholder="Robert Williams"></div>
+            <div class="form-group"><label class="form-label">Mailing Address</label><input type="text" id="la-landlord-addr" class="form-input" placeholder="789 Oak Ave, Austin, TX 78702"></div>
+            <div class="form-group"><label class="form-label">Phone / Email</label><input type="text" id="la-landlord-contact" class="form-input" placeholder="(512) 555-0100 / robert@email.com"></div>
+          </div>
+        </div>
+
+        <div class="doc-card" style="margin-top:12px">
+          <div class="doc-card-header">Tenant(s)</div>
+          <div class="doc-card-body">
+            <div id="la-tenants-list"></div>
+            <button class="doc-btn doc-btn--outline" id="add-tenant-btn" style="margin-top:8px">+ Add Tenant</button>
+          </div>
+        </div>
+
+        <div class="doc-card" style="margin-top:12px">
+          <div class="doc-card-header">Lease Term &amp; Rent</div>
+          <div class="doc-card-body">
+            <div class="form-row">
+              <div class="form-group"><label class="form-label">Start Date</label><input type="date" id="la-start" class="form-input"></div>
+              <div class="form-group" id="la-end-wrap"><label class="form-label">End Date</label><input type="date" id="la-end" class="form-input"></div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label">Monthly Rent ($)</label>
+                <div style="position:relative"><span style="position:absolute;left:10px;top:50%;transform:translateY(-50%);color:var(--ink-3);font-size:13px">$</span><input type="number" id="la-rent" class="form-input" style="padding-left:24px" placeholder="1500" min="0"></div>
+              </div>
+              <div class="form-group"><label class="form-label">Rent Due Day</label>
+                <select id="la-due-day" class="form-select">
+                  <option value="1st">1st of the month</option>
+                  <option value="15th">15th of the month</option>
+                  <option value="last day">Last day of the month</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label">Security Deposit ($)</label>
+                <div style="position:relative"><span style="position:absolute;left:10px;top:50%;transform:translateY(-50%);color:var(--ink-3);font-size:13px">$</span><input type="number" id="la-deposit" class="form-input" style="padding-left:24px" placeholder="1500" min="0"></div>
+              </div>
+              <div class="form-group"><label class="form-label">Late Fee ($)</label>
+                <div style="position:relative"><span style="position:absolute;left:10px;top:50%;transform:translateY(-50%);color:var(--ink-3);font-size:13px">$</span><input type="number" id="la-late-fee" class="form-input" style="padding-left:24px" placeholder="75" min="0"></div>
+              </div>
+            </div>
+            <div class="form-group"><label class="form-label">Late Fee Grace Period</label>
+              <select id="la-grace" class="form-select">
+                <option value="3">3 days after due date</option>
+                <option value="5" selected>5 days after due date</option>
+                <option value="7">7 days after due date</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="doc-card" style="margin-top:12px">
+          <div class="doc-card-header">Utilities &amp; Rules</div>
+          <div class="doc-card-body">
+            <div class="form-group">
+              <label class="form-label">Utilities Paid by Tenant</label>
+              <label style="display:flex;align-items:center;gap:8px;font-size:13px;margin-bottom:6px"><input type="checkbox" id="la-util-elec" checked> Electricity</label>
+              <label style="display:flex;align-items:center;gap:8px;font-size:13px;margin-bottom:6px"><input type="checkbox" id="la-util-gas"> Gas / heating</label>
+              <label style="display:flex;align-items:center;gap:8px;font-size:13px;margin-bottom:6px"><input type="checkbox" id="la-util-water"> Water &amp; sewer</label>
+              <label style="display:flex;align-items:center;gap:8px;font-size:13px;margin-bottom:6px"><input type="checkbox" id="la-util-internet"> Internet / cable</label>
+              <label style="display:flex;align-items:center;gap:8px;font-size:13px"><input type="checkbox" id="la-util-trash"> Trash removal</label>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Pets</label>
+              <select id="la-pets" class="form-select">
+                <option value="none">No pets allowed</option>
+                <option value="allowed">Pets allowed (no additional deposit)</option>
+                <option value="deposit">Pets allowed with pet deposit</option>
+                <option value="case">Pets allowed with written approval per pet</option>
+              </select>
+            </div>
+            <div class="form-group" id="la-pet-dep-wrap" style="display:none">
+              <label class="form-label">Pet Deposit ($)</label>
+              <div style="position:relative"><span style="position:absolute;left:10px;top:50%;transform:translateY(-50%);color:var(--ink-3);font-size:13px">$</span><input type="number" id="la-pet-dep" class="form-input" style="padding-left:24px" placeholder="300"></div>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Smoking</label>
+              <select id="la-smoking" class="form-select">
+                <option value="prohibited">No smoking anywhere on the premises</option>
+                <option value="outside">Smoking permitted outside only</option>
+                <option value="allowed">Smoking permitted inside</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Entry Notice Required</label>
+              <select id="la-notice" class="form-select">
+                <option value="24">24 hours (standard in most states)</option>
+                <option value="48">48 hours</option>
+                <option value="72">72 hours</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn-group" style="margin-top:12px">
+          <button class="doc-btn doc-btn--gold" onclick="window.print()">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 01-2-2v-5a2 2 0 012-2h16a2 2 0 012 2v5a2 2 0 01-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+            Download / Print PDF
+          </button>
+          <p style="font-size:11px;color:var(--ink-3);text-align:center;margin-top:4px">Use &ldquo;Save as PDF&rdquo;. All parties must sign.</p>
+        </div>
+      </div>
+
+      <!-- PREVIEW PANEL -->
+      <div class="doc-preview-panel" data-enter data-delay="2">
+        <div class="preview-toolbar">
+          <span class="preview-label">Live Preview</span>
+          <div class="preview-actions">
+            <button class="preview-btn preview-btn--primary" onclick="window.print()">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 01-2-2v-5a2 2 0 012-2h16a2 2 0 012 2v5a2 2 0 01-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+              Download PDF
+            </button>
+          </div>
+        </div>
+        <div class="legal-document" id="la-preview"></div>
+      </div>
+    </div>
+
+    <!-- ARTICLE -->
+    <section class="article-section">
+      <div class="article-body">
+        <h2>Residential Lease Agreement — 2026 Guide</h2>
+        <p>A lease agreement is a legally binding contract between a landlord and one or more tenants that defines the terms under which the tenant may occupy the rental property. A well-drafted lease protects both parties and reduces the risk of disputes.</p>
+        <h3>Fixed-Term vs. Month-to-Month</h3>
+        <ul>
+          <li><strong>Fixed-term lease</strong> &mdash; Locks in rent and terms for a set period (typically 12 months). The landlord cannot raise rent or change terms during the lease unless the lease permits it. The tenant cannot leave early without penalty unless a lease-breaking clause is included.</li>
+          <li><strong>Month-to-month</strong> &mdash; Renews automatically each month. Either party can usually end it with 30 days notice (some states require 60 days). More flexible but less stable for both parties.</li>
+        </ul>
+        <h3>Security Deposit Rules by State</h3>
+        <p>Most states cap the security deposit at 1&ndash;2 months&apos; rent and require it to be returned within 14&ndash;30 days of move-out (minus documented deductions for damages beyond normal wear and tear). Failing to return the deposit on time can result in penalties of 2&ndash;3x the deposit amount in many states.</p>
+        <h3>Required Disclosures</h3>
+        <p>Many states require specific disclosures at lease signing: lead paint disclosure (required by federal law for pre-1978 housing), bedbug history, flood zone disclosure, mold history, and others. Check your state&apos;s specific requirements &mdash; missing a required disclosure can void certain lease provisions or expose the landlord to liability.</p>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq-section" style="margin:0 -24px;padding:48px 24px">
+      <div class="faq-header"><p class="section-eyebrow">FAQ</p><h2 class="section-title" style="font-size:24px">Lease agreement questions</h2></div>
+      <div class="faq-list">
+        <details class="faq-item"><summary class="faq-q">What is the difference between a lease and a rental agreement?</summary><div class="faq-a">A lease (fixed-term) locks in rent and terms for a set period, typically 12 months &mdash; the landlord cannot raise rent mid-lease. A rental agreement (month-to-month) renews automatically each month and either party can typically end it with 30 days notice. Leases give more stability; rental agreements give more flexibility.</div></details>
+        <details class="faq-item"><summary class="faq-q">Can a landlord enter the rental property without notice?</summary><div class="faq-a">Almost never. Most states require 24&ndash;48 hours advance written notice before entry for non-emergency purposes (repairs, inspections, showing the unit). Emergency entries for fire, flood, or gas leaks are exempt. Repeated unauthorized entry can be considered landlord harassment and may allow the tenant to terminate the lease.</div></details>
+        <details class="faq-item"><summary class="faq-q">What can a landlord deduct from the security deposit?</summary><div class="faq-a">Landlords can deduct for: unpaid rent, damages beyond normal wear and tear (holes in walls, broken fixtures, stained carpet from negligence), cleaning costs if the unit is left unreasonably dirty, and lease-breaking fees if permitted in the lease. Normal wear and tear (minor scuffs, carpet wear from normal use, faded paint) cannot be deducted.</div></details>
+        <details class="faq-item"><summary class="faq-q">What happens if a tenant breaks the lease early?</summary><div class="faq-a">The tenant may owe the remaining rent for the lease term, subject to the landlord&apos;s duty to mitigate damages by trying to re-rent the unit. Some leases include an early termination fee (e.g., 2 months&apos; rent) as an alternative. Some states allow penalty-free early termination for military deployment, domestic violence, uninhabitable conditions, or certain job relocations.</div></details>
+        <details class="faq-item"><summary class="faq-q">Does a lease need to be notarized?</summary><div class="faq-a">No. A residential lease does not need to be notarized to be legally valid and enforceable. It simply needs to be signed by the landlord and all adult tenants. However, in Louisiana, long-term leases (over 1 year) must be in writing and may need to be recorded to be enforceable against third parties.</div></details>
+      </div>
+    </section>
+
+    <!-- RELATED -->
+    <section class="related-section">
+      <p class="section-eyebrow">Related Templates</p>
+      <h2 class="section-title" style="font-size:22px;margin-bottom:16px">You might also need</h2>
+      <div class="tools-grid" style="grid-template-columns:repeat(auto-fill,minmax(260px,1fr))">
+        <a href="/promissory-note-template" class="tool-card"><div class="tc-icon tc-green"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div><div><div class="tool-card-title">Promissory Note</div><div class="tool-card-desc">Document a loan between landlord and tenant.</div></div></a>
+        <a href="/bill-of-sale-template" class="tool-card"><div class="tc-icon tc-blue"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div><div><div class="tool-card-title">Bill of Sale</div><div class="tool-card-desc">Transfer furniture or appliances with the property.</div></div></a>
+        <a href="/power-of-attorney-template" class="tool-card"><div class="tc-icon tc-gold"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div><div><div class="tool-card-title">Power of Attorney</div><div class="tool-card-desc">Let someone manage your property in your absence.</div></div></a>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div><a href="/" class="footer-logo">FreeDocTemplates</a><p class="footer-tagline">Free legal document templates. No sign-up, no watermarks.</p><p class="footer-disclaimer" style="margin-top:8px">Not a law firm. For informational use only. Consult a licensed attorney.</p></div>
+      <div><div class="footer-col-title">Business</div><nav class="footer-nav"><a href="/invoice-template">Invoice</a><a href="/independent-contractor-agreement-template">Contractor Agreement</a><a href="/nda-template">NDA</a><a href="/employment-contract-template">Employment Contract</a></nav></div>
+      <div><div class="footer-col-title">Property</div><nav class="footer-nav"><a href="/lease-agreement-template">Lease Agreement</a><a href="/bill-of-sale-template">Bill of Sale</a><a href="/promissory-note-template">Promissory Note</a></nav></div>
+      <div><div class="footer-col-title">Personal</div><nav class="footer-nav"><a href="/power-of-attorney-template">Power of Attorney</a><a href="/llc-operating-agreement-template">LLC Agreement</a></nav></div>
+    </div>
+    <div class="footer-bottom"><p>&copy; 2026 FreeDocTemplates.xyz</p></div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var tenants = [{ name:'', phone:'' }];
+
+  function gv(id){ var el=document.getElementById(id); return el?(el.tagName==='INPUT'&&el.type==='checkbox'?el.checked:(el.value||'').trim()):''; }
+  function field(v,ph){ return v?'<span class="doc-field">'+v+'</span>':'<span class="doc-field empty">'+ph+'</span>'; }
+  function fmtD(d){ return d?new Date(d+'T12:00:00').toLocaleDateString('en-US',{year:'numeric',month:'long',day:'numeric'}):null; }
+  function fmtMoney(n){ return '$'+parseFloat(n||0).toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g,','); }
+
+  function renderTenantInputs(){
+    document.getElementById('la-tenants-list').innerHTML = tenants.map(function(t,i){
+      return '<div style="background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:12px;margin-bottom:10px">'
+        +'<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">'
+        +'<span style="font-size:12px;font-weight:700;color:var(--ink-2)">Tenant '+(i+1)+'</span>'
+        +(tenants.length>1?'<button data-tdel="'+i+'" style="background:none;border:none;cursor:pointer;color:var(--ink-3);font-size:13px">&#xD7; Remove</button>':'')
+        +'</div>'
+        +'<div class="form-group"><label class="form-label">Full Name</label><input type="text" data-ti="'+i+'" data-tf="name" class="form-input" value="'+t.name+'" placeholder="Jane Smith"></div>'
+        +'<div class="form-group"><label class="form-label">Phone</label><input type="text" data-ti="'+i+'" data-tf="phone" class="form-input" value="'+t.phone+'" placeholder="(512) 555-0200"></div>'
+        +'</div>';
+    }).join('');
+    document.querySelectorAll('[data-ti][data-tf]').forEach(function(el){
+      el.addEventListener('input', function(){ tenants[this.dataset.ti][this.dataset.tf]=this.value; render(); });
+    });
+    document.querySelectorAll('[data-tdel]').forEach(function(btn){
+      btn.addEventListener('click', function(){ tenants.splice(parseInt(this.dataset.tdel),1); renderTenantInputs(); render(); });
+    });
+  }
+
+  function getUtilities(){
+    var u=[];
+    if(gv('la-util-elec')) u.push('electricity');
+    if(gv('la-util-gas')) u.push('gas/heating');
+    if(gv('la-util-water')) u.push('water and sewer');
+    if(gv('la-util-internet')) u.push('internet/cable');
+    if(gv('la-util-trash')) u.push('trash removal');
+    return u;
+  }
+
+  function getSmokingClause(){
+    var v=gv('la-smoking');
+    if(v==='outside') return 'Smoking is prohibited inside the Premises. Smoking is permitted outside in designated outdoor areas only.';
+    if(v==='allowed') return 'Smoking is permitted inside the Premises. Tenant is responsible for any damage caused by smoking.';
+    return 'Smoking of any substance is strictly prohibited anywhere on the Premises, including inside units, balconies, patios, and common areas.';
+  }
+
+  function getPetClause(){
+    var v=gv('la-pets');
+    if(v==='allowed') return 'Tenant may keep household pets on the Premises at no additional charge. Tenant is liable for any damage caused by pets.';
+    if(v==='deposit') return 'Tenant may keep household pets on the Premises upon payment of a non-refundable pet deposit of '+fmtMoney(gv('la-pet-dep'))+'. Tenant is liable for any damage caused by pets.';
+    if(v==='case') return 'Tenant must obtain prior written approval from Landlord for each pet. Approved pets must be documented in a written pet addendum signed by both parties.';
+    return 'No pets or animals of any kind are permitted on the Premises without the prior written consent of the Landlord.';
+  }
+
+  function render(){
+    var type       = gv('la-type');
+    var state      = gv('la-state')           || '[State]';
+    var propAddr   = gv('la-prop-addr')        || '[Property Address]';
+    var unit       = gv('la-unit');
+    var propType   = gv('la-prop-type')        || 'property';
+    var landlord   = gv('la-landlord')         || '[Landlord Name]';
+    var llAddr     = gv('la-landlord-addr')    || '[Landlord Address]';
+    var llContact  = gv('la-landlord-contact') || '';
+    var startDate  = fmtD(gv('la-start'))      || '[Start Date]';
+    var endDate    = fmtD(gv('la-end'))        || '[End Date]';
+    var rent       = gv('la-rent')             || '[Rent Amount]';
+    var dueDay     = gv('la-due-day')          || '1st';
+    var deposit    = gv('la-deposit')          || '0';
+    var lateFee    = gv('la-late-fee')         || '0';
+    var grace      = gv('la-grace')            || '5';
+    var notice     = gv('la-notice')           || '24';
+
+    var fullAddr   = propAddr + (unit ? ', ' + unit : '');
+    var tenantNames= tenants.map(function(t){ return t.name||'[Tenant Name]'; }).join(', ');
+    var utils      = getUtilities();
+    var monthly    = parseFloat(rent)||0;
+
+    var termClause = type === 'monthly'
+      ? 'This is a month-to-month rental agreement commencing on '+startDate+'. Either party may terminate this Agreement with 30 days written notice.'
+      : 'This lease shall commence on '+startDate+' and expire on '+endDate+'. Tenant shall vacate the Premises by 11:59 PM on '+endDate+' unless the parties agree in writing to extend this lease.';
+
+    var tenantSigs = tenants.map(function(t,i){
+      return '<div class="doc-sig-block"><div style="height:40px"></div><div><strong>Tenant '+(i+1)+' Signature</strong></div><div class="doc-sig-label">'+(t.name||'[Tenant Name]')+'</div><div class="doc-sig-label">Date: ________</div></div>';
+    }).join('');
+
+    document.getElementById('la-preview').innerHTML =
+      '<div class="doc-title">RESIDENTIAL '+(type==='monthly'?'RENTAL AGREEMENT':'LEASE AGREEMENT')+'</div>'
+      +'<div class="doc-subtitle">State of '+state+'</div>'
+      +'<div class="doc-clause"><p>This '+(type==='monthly'?'Rental Agreement':'Lease Agreement')+' (the &ldquo;Agreement&rdquo;) is entered into between:</p></div>'
+      +'<div class="doc-section"><div class="doc-section-title">Landlord</div>'
+      +'<p><strong>'+field(gv('la-landlord'),landlord)+'</strong><br>Mailing address: '+field(gv('la-landlord-addr'),llAddr)
+      +(llContact?'<br>Contact: '+llContact:'')+'</p></div>'
+      +'<div class="doc-section"><div class="doc-section-title">Tenant(s)</div><p><strong>'+field(tenantNames,tenantNames)+'</strong></p></div>'
+      +'<div class="doc-divider"></div>'
+      +'<div class="doc-section"><div class="doc-section-title">1. Premises</div>'
+      +'<p>Landlord hereby leases to Tenant the '+propType+' located at: <strong>'+field(fullAddr,'[Property Address]')+'</strong>, State of '+state+' (the &ldquo;Premises&rdquo;), for residential use only.</p></div>'
+      +'<div class="doc-section"><div class="doc-section-title">2. Lease Term</div><p>'+termClause+'</p></div>'
+      +'<div class="doc-section"><div class="doc-section-title">3. Rent</div>'
+      +'<p>Tenant shall pay a monthly rent of <strong>'+fmtMoney(rent)+'</strong>, due on the '+dueDay+' of each month. Rent shall be paid by [check / bank transfer / other agreed method] to Landlord at the address above.</p>'
+      +'<p>A late fee of '+fmtMoney(lateFee)+' shall be charged if rent is not received within '+grace+' days of the due date.</p></div>'
+      +'<div class="doc-section"><div class="doc-section-title">4. Security Deposit</div>'
+      +'<p>Upon execution of this Agreement, Tenant shall deposit <strong>'+fmtMoney(deposit)+'</strong> as a security deposit. The deposit shall be held in accordance with the laws of the State of '+state+' and returned within the legally required period following vacating of the Premises, less any lawful deductions for unpaid rent or damages beyond normal wear and tear.</p></div>'
+      +'<div class="doc-section"><div class="doc-section-title">5. Utilities</div>'
+      +'<p>'+(utils.length?'Tenant is responsible for payment of the following utilities: <strong>'+utils.join(', ')+'</strong>. All other utilities are included in the monthly rent.':'All utilities are included in the monthly rent.')+'</p></div>'
+      +'<div class="doc-section"><div class="doc-section-title">6. Pets</div><p>'+getPetClause()+'</p></div>'
+      +'<div class="doc-section"><div class="doc-section-title">7. Smoking</div><p>'+getSmokingClause()+'</p></div>'
+      +'<div class="doc-section"><div class="doc-section-title">8. Maintenance &amp; Repairs</div>'
+      +'<p>Tenant shall keep the Premises in clean condition and promptly notify Landlord of any repairs needed. Tenant shall not make alterations without prior written consent. Landlord shall maintain the Premises in habitable condition as required by applicable law.</p></div>'
+      +'<div class="doc-section"><div class="doc-section-title">9. Entry by Landlord</div>'
+      +'<p>Landlord shall provide at least '+notice+' hours advance written notice before entering the Premises for non-emergency purposes. Emergency entries (fire, flood, gas leak) do not require advance notice.</p></div>'
+      +'<div class="doc-section"><div class="doc-section-title">10. Termination &amp; Default</div>'
+      +'<p>If Tenant fails to pay rent when due or materially violates any term of this Agreement, Landlord may terminate this Agreement in accordance with the laws of the State of '+state+', including providing the required notice to vacate before initiating eviction proceedings.</p></div>'
+      +'<div class="doc-section"><div class="doc-section-title">11. Governing Law</div>'
+      +'<p>This Agreement shall be governed by the laws of the State of '+state+'.</p></div>'
+      +'<p style="font-size:11px;color:#555;margin-bottom:24px">IN WITNESS WHEREOF, the parties have executed this Agreement as of the date first written above.</p>'
+      +'<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:24px;margin-top:32px">'
+      +'<div class="doc-sig-block"><div style="height:40px"></div><div><strong>Landlord Signature</strong></div><div class="doc-sig-label">'+field(gv('la-landlord'),landlord)+'</div><div class="doc-sig-label">Date: ________</div></div>'
+      +tenantSigs
+      +'</div>';
+  }
+
+  document.getElementById('add-tenant-btn').addEventListener('click', function(){
+    tenants.push({name:'',phone:''}); renderTenantInputs(); render();
+  });
+
+  document.getElementById('la-type').addEventListener('change', function(){
+    document.getElementById('la-end-wrap').style.display = this.value==='monthly' ? 'none' : '';
+    render();
+  });
+
+  document.getElementById('la-pets').addEventListener('change', function(){
+    document.getElementById('la-pet-dep-wrap').style.display = this.value==='deposit' ? '' : 'none';
+    render();
+  });
+
+  document.querySelectorAll('[id^="la-"]').forEach(function(el){
+    el.addEventListener('input', render);
+    el.addEventListener('change', render);
+  });
+
+  var today = new Date().toISOString().split('T')[0];
+  var nextYear = new Date(); nextYear.setFullYear(nextYear.getFullYear()+1);
+  document.getElementById('la-start').value = today;
+  document.getElementById('la-end').value = nextYear.toISOString().split('T')[0];
+  renderTenantInputs();
+  render();
+})();
+</script>
+<script src="/shared/scripts.js?v=1" defer></script>
+</body>
+</html>`;
+
+fs.writeFileSync(p, html);
+console.log('lease ok', fs.statSync(p).size);

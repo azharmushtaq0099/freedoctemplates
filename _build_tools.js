@@ -1,0 +1,145 @@
+const fs = require('fs');
+const p = 'C:/Users/mastr/claude co/legal-docs/tools.html';
+
+const html = `<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>All Free Legal Document Templates 2026 | FreeDocTemplates</title>
+<meta name="description" content="Browse all free legal document templates. Bill of sale, power of attorney, NDA, LLC operating agreement, invoice, contractor agreement, employment contract, promissory note, and more.">
+<link rel="canonical" href="https://www.freedoctemplates.xyz/tools">
+<meta name="robots" content="index,follow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap">
+<link rel="stylesheet" href="/shared/styles.css?v=1">
+</head>
+<body>
+<div class="cmd-overlay" id="cmd-overlay" role="dialog" aria-modal="true" aria-label="Search templates">
+  <div class="cmd-modal">
+    <div class="cmd-search-row">
+      <span class="cmd-search-icon"><svg width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="9" r="6"/><path d="M15 15l3 3"/></svg></span>
+      <input class="cmd-input" id="cmd-input" type="text" placeholder="Search templates..." autocomplete="off" spellcheck="false">
+      <kbd class="cmd-kbd-esc" onclick="closeCmd()">esc</kbd>
+    </div>
+    <div class="cmd-body" id="cmd-body"></div>
+    <div class="cmd-footer"><span class="cmd-hint"><kbd class="cmd-key">&uarr;&darr;</kbd> navigate</span><span class="cmd-hint"><kbd class="cmd-key">&#x21b5;</kbd> open</span><span class="cmd-hint"><kbd class="cmd-key">esc</kbd> close</span></div>
+  </div>
+</div>
+<header class="site-header">
+  <div class="header-inner">
+    <a href="/" class="site-logo">FreeDoc<span>Templates</span></a>
+    <nav class="main-nav" aria-label="Main">
+      <div class="nav-group">
+        <button class="nav-trigger" aria-haspopup="true" aria-expanded="false">Business <svg class="nav-chevron" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4l4 4 4-4"/></svg></button>
+        <div class="nav-dropdown"><a href="/invoice-template" class="nav-item">Invoice Template</a><a href="/independent-contractor-agreement-template" class="nav-item">Contractor Agreement</a><a href="/nda-template" class="nav-item">NDA Template</a><a href="/employment-contract-template" class="nav-item">Employment Contract</a></div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-trigger" aria-haspopup="true" aria-expanded="false">Personal <svg class="nav-chevron" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4l4 4 4-4"/></svg></button>
+        <div class="nav-dropdown"><a href="/power-of-attorney-template" class="nav-item">Power of Attorney</a><a href="/llc-operating-agreement-template" class="nav-item">LLC Agreement</a><a href="/promissory-note-template" class="nav-item">Promissory Note</a><a href="/bill-of-sale-template" class="nav-item">Bill of Sale</a></div>
+      </div>
+    </nav>
+    <div class="header-actions">
+      <button class="btn-search" id="btn-search" aria-label="Search"><svg width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="9" r="6"/><path d="M15 15l3 3"/></svg></button>
+      <a href="/tools" class="btn-all-tools" aria-current="page">All Templates</a>
+    </div>
+  </div>
+</header>
+<main class="page-wrap">
+  <div class="container">
+    <nav class="breadcrumb"><a href="/">Home</a><span>&#x203A;</span><span aria-current="page">All Templates</span></nav>
+    <h1 class="page-title" data-enter>All Legal Templates</h1>
+    <p class="page-sub" data-enter data-delay="1">Free legal document generators. Fill in online, preview live, download PDF. No account, no watermark.</p>
+
+    <div style="margin:32px 0 16px">
+      <p class="section-eyebrow">Business Documents</p>
+      <h2 class="section-title" style="font-size:20px;margin-bottom:20px">Run your business</h2>
+      <div class="tools-grid">
+        <a href="/invoice-template" class="tool-card" data-enter>
+          <div class="tc-icon tc-green"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="2" x2="12" y2="22"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg></div>
+          <div><div class="tool-card-title">Invoice Template</div><div class="tool-card-desc">Line items, tax, payment terms. Download PDF.</div><div class="tool-card-tag">Business</div></div>
+        </a>
+        <a href="/independent-contractor-agreement-template" class="tool-card" data-enter data-delay="1">
+          <div class="tc-icon tc-gold"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg></div>
+          <div><div class="tool-card-title">Contractor Agreement</div><div class="tool-card-desc">Services, IP ownership, confidentiality, payment.</div><div class="tool-card-tag">Business</div></div>
+        </a>
+        <a href="/nda-template" class="tool-card" data-enter data-delay="2">
+          <div class="tc-icon tc-slate"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg></div>
+          <div><div class="tool-card-title">NDA Template</div><div class="tool-card-desc">Mutual and one-way non-disclosure agreements.</div><div class="tool-card-tag">Business &middot; $8.93 CPC</div></div>
+        </a>
+        <a href="/employment-contract-template" class="tool-card" data-enter>
+          <div class="tc-icon tc-blue"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg></div>
+          <div><div class="tool-card-title">Employment Contract</div><div class="tool-card-desc">Full-time &amp; part-time employee agreements.</div><div class="tool-card-tag">Business &middot; $9.46 CPC</div></div>
+        </a>
+      </div>
+    </div>
+
+    <div style="margin:40px 0 16px">
+      <p class="section-eyebrow">Business Formation</p>
+      <h2 class="section-title" style="font-size:20px;margin-bottom:20px">Start &amp; structure your business</h2>
+      <div class="tools-grid">
+        <a href="/llc-operating-agreement-template" class="tool-card" data-enter>
+          <div class="tc-icon tc-gold"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+          <div><div class="tool-card-title">LLC Operating Agreement</div><div class="tool-card-desc">Single-member and multi-member. All 50 states.</div><div class="tool-card-tag">Business Formation &middot; $6.98 CPC</div></div>
+        </a>
+      </div>
+    </div>
+
+    <div style="margin:40px 0 16px">
+      <p class="section-eyebrow">Property &amp; Transfers</p>
+      <h2 class="section-title" style="font-size:20px;margin-bottom:20px">Buy, sell, and transfer</h2>
+      <div class="tools-grid">
+        <a href="/bill-of-sale-template" class="tool-card" data-enter>
+          <div class="tc-icon tc-blue"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/></svg></div>
+          <div><div class="tool-card-title">Bill of Sale</div><div class="tool-card-desc">Vehicle, boat, general &mdash; all 50 states.</div><div class="tool-card-tag">Property &middot; 14,800/mo</div></div>
+        </a>
+        <a href="/promissory-note-template" class="tool-card" data-enter data-delay="1">
+          <div class="tc-icon tc-green"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></div>
+          <div><div class="tool-card-title">Promissory Note</div><div class="tool-card-desc">Auto-calculates payments. Lump sum or installments.</div><div class="tool-card-tag">Finance &middot; Loans</div></div>
+        </a>
+        <a href="/lease-agreement-template" class="tool-card" data-enter data-delay="2">
+          <div class="tc-icon tc-slate"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg></div>
+          <div><div class="tool-card-title">Lease Agreement</div><div class="tool-card-desc">Residential rental lease &mdash; coming soon.</div><div class="tool-card-tag">Real Estate &middot; 14,800/mo</div></div>
+        </a>
+      </div>
+    </div>
+
+    <div style="margin:40px 0 16px">
+      <p class="section-eyebrow">Personal &amp; Estate</p>
+      <h2 class="section-title" style="font-size:20px;margin-bottom:20px">Protect yourself and your family</h2>
+      <div class="tools-grid">
+        <a href="/power-of-attorney-template" class="tool-card" data-enter>
+          <div class="tc-icon tc-gold"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+          <div><div class="tool-card-title">Power of Attorney</div><div class="tool-card-desc">General, durable, limited, and medical POA.</div><div class="tool-card-tag">Personal &middot; 9,900/mo</div></div>
+        </a>
+      </div>
+    </div>
+
+    <div class="article-section" style="margin-top:48px">
+      <div class="article-body">
+        <h2>Why use free legal document templates?</h2>
+        <p>Professional legal help is expensive — attorney fees for a simple LLC operating agreement or contractor agreement can run $500 to $2,000. For straightforward legal documents with well-established forms, a quality template lets you create a legally sound document in minutes at no cost.</p>
+        <p>All templates on FreeDocTemplates are designed for US use, updated for 2026, and include the clauses that matter most: IP assignment, confidentiality, governing law, and dispute resolution. You fill in the blanks, see a live document preview, and download a clean PDF — no watermarks, no account required.</p>
+        <p><strong>Important:</strong> These templates are starting points, not legal advice. For complex transactions, high-value contracts, or any situation with significant legal risk, consult a licensed attorney in your state.</p>
+      </div>
+    </div>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div><a href="/" class="footer-logo">FreeDocTemplates</a><p class="footer-tagline">Free legal document templates. No sign-up, no watermarks.</p><p class="footer-disclaimer" style="margin-top:8px">Not a law firm. For informational use only. Consult a licensed attorney for legal advice.</p></div>
+      <div><div class="footer-col-title">Business</div><nav class="footer-nav"><a href="/invoice-template">Invoice</a><a href="/independent-contractor-agreement-template">Contractor Agreement</a><a href="/nda-template">NDA</a><a href="/employment-contract-template">Employment Contract</a></nav></div>
+      <div><div class="footer-col-title">Property</div><nav class="footer-nav"><a href="/bill-of-sale-template">Bill of Sale</a><a href="/promissory-note-template">Promissory Note</a><a href="/lease-agreement-template">Lease Agreement</a></nav></div>
+      <div><div class="footer-col-title">Personal</div><nav class="footer-nav"><a href="/power-of-attorney-template">Power of Attorney</a><a href="/llc-operating-agreement-template">LLC Agreement</a></nav></div>
+    </div>
+    <div class="footer-bottom"><p>&copy; 2026 FreeDocTemplates.xyz</p></div>
+  </div>
+</footer>
+<script src="/shared/scripts.js?v=1" defer></script>
+</body>
+</html>`;
+
+fs.writeFileSync(p, html);
+console.log('tools ok', fs.statSync(p).size);
